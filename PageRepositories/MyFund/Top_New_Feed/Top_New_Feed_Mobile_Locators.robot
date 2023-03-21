@@ -34,5 +34,11 @@ ${locatButtonConfirmOTPDisabled}  //android.widget.LinearLayout[2]/android.widge
 ${locatButtonConfirmOTPEnabled}  //android.widget.LinearLayout[2]/android.widget.Button[@enabled="true"]
 ${locatLabelPleaseInputPIN}  //android.widget.LinearLayout[1]/android.widget.TextView[contains(@text,"กรุณากด PIN เพื่อเข้าสู่ระบบ")]
 
+${locatButtonContactUs}   //android.widget.Button[contains(@text,"ติดต่อเจ้าหน้าที่")]
+${locatButtonStartVDOCALL}  //android.widget.Button[contains(@text,"เริ่ม VDO CALL")]
 
+${locatHeaderVDOCALL}  //android.widget.TextView[@resource-id="com.tisconet.ftc.sit:id/tvTitle"][contains(@text,"ติดต่อเจ้าหน้าที่ผ่าน VDO CALL")]     #//android.widget.TextView[@resource-id="com.tisconet.ftc.sit:id/tvTitle"]  
+${locatAnnounceVDOCALL}    xpath= (//android.widget.FrameLayout[@resource-id="com.tisconet.ftc.sit:id/content"]//android.widget.TextView)[1]  #//android.widget.FrameLayout/android.widget.LinearLayout/android.widget.TextView[1]
+${locatDetailVDOCALL1}  xpath= (//android.widget.FrameLayout[@resource-id="com.tisconet.ftc.sit:id/cardView"]/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.TextView)[1]
+${locatDetailVDOCALL2}  xpath= (//android.widget.FrameLayout[@resource-id="com.tisconet.ftc.sit:id/cardView"]/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.TextView)[2]
 # //*[@resource-id="com.tisconet.ftc.sit:id/headerTitle"][contains(@text,"เปิดบัญชีกองทุน")]

@@ -1,0 +1,23 @@
+{
+    "capabilities": [
+        {
+            "browserName": "Pixel 4 API 33 For Not Login",
+            "platformName": "ANDROID",
+            "platformVersion": "13.0",
+            "maxInstances": 1
+        }
+    ],
+    "configuration": {
+        "cleanUpCycle": 2000,
+        "timeout": 30000,
+        "proxy": "org.openqa.grid.selenium.proxy.DefaultRemoteProxy",
+        "url": "http://192.168.1.43:4725/wd/hub",
+        "host": "192.168.1.43",
+        "port": "4725",
+        "maxSession": 1,
+        "register": true,
+        "registerCycle": 5000,
+        "hubHost": "192.168.1.43",
+        "hubProtocol": "http"
+    }
+}
