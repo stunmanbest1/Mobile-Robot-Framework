@@ -35,6 +35,9 @@ ${varDetailCase7}  Dear value customer\nFund TINC-A meet target top earning 10% 
 ${varTopicCase8}  Automate notification action buy send by schedule
 ${varDetailCase8}  Dear value customer\nFund TINC-A meet target top earning 10% in 3 month.\nIf you want to invest on this fund please buy.
 
+${varTopicCase9}  Automate notification action switch send by now
+${varDetailCase9}  Dear value customer\nFund TEGRMF-A will be  terminate soon.\nHighly recommend to switch out.
+
 ${UsernameAcc3}  accuser3
 ${UsernameAutomate1}  automate1
 ${PasswordAutomate1}  Tisco#1234
@@ -48,7 +51,8 @@ ${varActive}  true
 ${varNotActive}  false
 ${varFundCodeTINC-A}  TINC-A
 ${varFundNameTINC-A}  กองทุนเปิด ทิสโก้ อินคัม พลัส ชนิดหน่วยลงทุน A
-
+${varFundCodeTEGRMF-A}  TEGRMF-A
+${varFundNameTEGRMF-A}  กองทุนเปิด ทิสโก้หุ้นทุนเพื่อการเลี้ยงชีพ ชนิดหน่วยลงทุน A
 
 #C:/Users/เบส/Desktop/TISCO/Mobile App/BestTest/nodeconfig/nodeconfig-android-v11.json
 #C:/Users/เบส/Desktop/TISCO/Mobile App/BestTest/nodeconfig/nodeconfig-android-v12.json

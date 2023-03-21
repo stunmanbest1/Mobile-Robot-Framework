@@ -20,6 +20,7 @@ TESTCASE001_Single Feed Broadcast All
     ...    app=${APP_LOCATION}  
     ...    automationName=appium  
     ...    noReset=true
+    Verify Progress Bra
     Press Button Accept Cookie
     Press Icon Notification
     Verify Message Inbox  ${varTopicCase1}  ${varDetailCase1}
@@ -39,6 +40,7 @@ TESTCASE002_Single Feed Set Schedule Broadcast All
     ...    app=${APP_LOCATION}  
     ...    automationName=appium  
     ...    noReset=true
+    Verify Progress Bra
     Press Button Accept Cookie
     Press Icon Notification
     Verify Message Inbox  ${varTopicCase2}  ${varDetailCase2}
@@ -63,7 +65,7 @@ TESTCASE003_Single Feed Specific Target By Now
     ...    app=${APP_LOCATION}  
     ...    automationName=appium  
     ...    noReset=true
-
+    Verify Progress Bra
     Press Button Accept Cookie
     # Click Accept on Popup Login
     # Login My Fund Mobile  ${UsernameAutomate1}  ${PasswordAutomate1}
@@ -89,7 +91,7 @@ TESTCASE004_Single Feed Specific Target By Schedule
     ...    app=${APP_LOCATION}  
     ...    automationName=appium  
     ...    noReset=true
-
+    Verify Progress Bra
     Press Button Accept Cookie
 
     Press Icon Notification
@@ -111,7 +113,7 @@ TESTCASE005_Single Feed Specific Contact Us by now
     ...    app=${APP_LOCATION}  
     ...    automationName=appium  
     ...    noReset=true
-
+    Verify Progress Bra
     Press Button Accept Cookie
 
     # Click Accept on Popup Login
@@ -148,6 +150,7 @@ TESTCASE006_Single Feed Specific Contact Us by schedule
     ...    app=${APP_LOCATION}  
     ...    automationName=appium  
     ...    noReset=true
+    Verify Progress Bra
     Press Button Accept Cookie
     Press Icon Notification
     Verify Message Inbox  ${varTopicCase6}  ${varDetailCase6}
@@ -169,7 +172,7 @@ TESTCASE006_Single Feed Specific Contact Us by schedule
     Verify Button Start VDO CALL
     
 TESTCASE007_Single Feed Specific Action buy
-    [Tags]  Contact_us
+    [Tags]  Buy
     Open Application  
     ...    ${URL}  
     ...    udid=${DEVICE_UDIDLOGIN}  
@@ -179,6 +182,7 @@ TESTCASE007_Single Feed Specific Action buy
     ...    app=${APP_LOCATION}  
     ...    automationName=appium  
     ...    noReset=true
+    Verify Progress Bra
     Press Button Accept Cookie
     Press Icon Notification
     Verify Message Inbox  ${varTopicCase7}  ${varDetailCase7}
@@ -199,7 +203,7 @@ TESTCASE007_Single Feed Specific Action buy
     Verify Default Transaction Screen  ${varActive}  ${varNotActive}  ${varNotActive}  ${varFundCodeTINC-A}  ${varFundCodeTINC-A}  ${varFundNameTINC-A}
 
 TESTCASE008_Single Feed Specific Action buy as schedule  #เว็บยังส่งไม่ได้
-    [Tags]  Contact_us
+    [Tags]  Buy
     Open Application  
     ...    ${URL}  
     ...    udid=${DEVICE_UDIDLOGIN}  
@@ -209,6 +213,7 @@ TESTCASE008_Single Feed Specific Action buy as schedule  #เว็บยัง�
     ...    app=${APP_LOCATION}  
     ...    automationName=appium  
     ...    noReset=true
+    Verify Progress Bra
     Press Button Accept Cookie
     Press Icon Notification
     Verify Message Inbox  ${varTopicCase8}  ${varDetailCase8}
@@ -223,11 +228,43 @@ TESTCASE008_Single Feed Specific Action buy as schedule  #เว็บยัง�
     Verify Label Header PIN
     Verify Button Back
     Press Button Back
-    Verify Message Detail In Inbox  ${varTopicCase7}  ${varDetailCase7}
+    Verify Message Detail In Inbox  ${varTopicCase8}  ${varTopicCase8}
     Click Button Interested in Invest
     Verify Button Back
     Click Pin   1  1  2  2  3  3
     Verify Mobile Loading Is Done
     Verify Default Transaction Screen  ${varActive}  ${varNotActive}  ${varNotActive}  ${varFundCodeTINC-A}  ${varFundCodeTINC-A}  ${varFundNameTINC-A}
 
+
+TESTCASE009_Single Feed Specific Action switch
+    [Tags]  Switch
+     Open Application  
+    ...    ${URL}  
+    ...    udid=${DEVICE_UDIDLOGIN}  
+    ...    platformName=${PLATFORM}  
+    ...    platformVersion=${DEVICE_TARGET}  
+    ...    deviceName=${DEVICE_NAME}  
+    ...    app=${APP_LOCATION}  
+    ...    automationName=appium  
+    ...    noReset=true
+    Verify Progress Bra
+    Press Button Accept Cookie
+    Press Icon Notification
+    Verify Message Inbox  ${varTopicCase9}  ${varDetailCase9}
+    Select Topic  ${varTopicCase9}
+    Verify Message Detail In Inbox  ${varTopicCase9}  ${varDetailCase9}
+    Verify Button Back
+    Verify Button Interested in Invest
+    #ขาด Date
+    # Verify Date In Message
+    Click Button Interested in Invest
+    Verify Label Header PIN
+    Verify Button Back
+    Press Button Back
+    Verify Message Detail In Inbox  ${varTopicCase9}  ${varDetailCase9}
+    Click Button Interested in Invest
+    Verify Button Back
+    Click Pin   1  1  2  2  3  3
+    Verify Mobile Loading Is Done
+    Verify Default Transaction Screen  ${varNotActive}  ${varNotActive}  ${varActive}  ${varFundCodeTEGRMF-A}  ${varFundCodeTEGRMF-A}  ${varFundNameTEGRMF-A}
 

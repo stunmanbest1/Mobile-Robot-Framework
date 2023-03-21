@@ -1,9 +1,11 @@
 *** Settings ***
-Resource    ../../../PageVariable/MyFund/Top_New_Feed/Alpha_Single_Feed_Broadcast_All_Variables.robot
-Resource    ../../../PageRepositories/MyFund/Top_New_Feed/Single_Feed_Broadcast_All_Locators.robot
+Resource    ../../../PageVariable/MyFund/Top_New_Feed/Alpha_Top_New_Feed_Mobile_Variables.robot
+Resource    ../../../PageRepositories/MyFund/Top_New_Feed/Top_New_Feed_Mobile_Locators.robot
 
 
 *** Keywords ***
+Verify Progress Bra
+    AppiumLibrary.Wait Until Element Is Visible  //android.widget.ProgressBar[@resource-id="com.tisconet.ftc.sit:id/progressBar"]  timeout=20s
 
 Press Button Accept Cookie
     ${Status}   BuiltIn.Run Keyword And Return Status   AppiumLibrary.Wait Until Element Is Visible  ${locatAndroidButtonAcceptCookie}  timeout=10s
@@ -208,7 +210,7 @@ Verify Default Transaction Screen
     Wait Until Page Contains Element  //android.view.ViewGroup[@resource-id="com.tisconet.ftc.sit:id/toolbar"]//android.widget.TextView[contains(@text,"สถานะ")]  timeout=10s
     Wait Until Page Contains Element  //android.widget.LinearLayout[@resource-id="com.tisconet.ftc.sit:id/btnOrderStatus"]//android.widget.ImageView   timeout=10s   #ICON
     Wait Until Page Contains Element  //android.widget.RadioButton[@resource-id="com.tisconet.ftc.sit:id/rdBuy"][@checked="${Buy}"]  timeout=10s
-    Wait Until Page Contains Element  //android.widget.RadioButton[@resource-id="com.tisconet.ftc.sit:id/rdSell"][@checked="${Trade}"]  timeout=10s
+    Wait Until Page Contains Element  //android.widget.RadioButton[@resource-id="com.tisconet.ftc.sit:id/rdSell"][@checked="${Sell}"]  timeout=10s
     Wait Until Page Contains Element  //android.widget.RadioButton[@resource-id="com.tisconet.ftc.sit:id/rdTrade"][@checked="${Trade}"]  timeout=10s
     Wait Until Page Contains Element  //android.widget.EditText[@resource-id="com.tisconet.ftc.sit:id/edtSearch"][contains(@text,"${SearchDefault}")]  timeout=10s
     #Fund List Search
