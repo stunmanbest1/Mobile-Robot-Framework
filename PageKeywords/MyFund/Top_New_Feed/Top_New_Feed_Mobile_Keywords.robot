@@ -140,7 +140,6 @@ Verify Button Interested in Invest
 Verify Date In Message
     ${day}  Get Current Day Mobile
     ${month}  Get Current Month Mobile
-    # Wait Until Page Contains Element    //android.widget.ScrollView/android.widget.LinearLayout/android.widget.TextView[2][contains(@text,"20 มี.ค. 66 เวลา 10:27 น.")]
     ${GENDATE}  Get Text  //android.widget.ScrollView/android.widget.LinearLayout/android.widget.TextView[2]
     ${string}=    Remove String        ${GENDATE}   ${day}   ${month}    66    เวลา    น.
     ${Time}  Set Variable  ${string}
@@ -163,9 +162,16 @@ Verify Date In Message
         Exit For Loop If  ${Time.minute} == ${index}
     END
 
+Verify Date Time In Message as Schedule
+    [Arguments]  ${Time}
+    ${day}  Get Current Day Mobile
+    ${month}  Get Current Month Mobile
+    ${year}  Get Current Year My Fund
+    Wait Until Page Contains Element    //android.widget.ScrollView/android.widget.LinearLayout/android.widget.TextView[2][contains(@text,"${day} ${month} ${year} เวลา ${Time} น.")]
+
 
 Check Date And Time For Create Date
-    ${GENDATE}  Get Text  (//div[@class="card-body"]//tr//td//span[text()="วันที่สร้างหรือแก้ไขข้อมูล"]//parent::*/following-sibling::*[@class="highlight td"]//div//*)[1] 
+    ${GENDATE}  Get Text  (//div[@class="card-body"]//tr//td//span[text()="วันที่สร้างหรือแก้ไขข้อมูล"]//parent::*/following-sibling::*[@class="highlight td"]//div//*)[1] 
     ${GENDATE}=  Convert Date  ${GENDATE}  date_format=%d/%m/%Y %H:%M 
     ${GENDATE}=  Convert Date  ${GENDATE}  datetime
 
@@ -198,8 +204,32 @@ Get Current Month Mobile
       ...  BuiltIn.Set Variable  มี.ค.
       ...  ELSE IF  '${currentMonth}'=='04'
       ...  BuiltIn.Set Variable  เม.ย.
+      ...  ELSE IF  '${currentMonth}'=='05'
+      ...  BuiltIn.Set Variable  พ.ค.
+      ...  ELSE IF  '${currentMonth}'=='06'
+      ...  BuiltIn.Set Variable  มิ.ย.
+      ...  ELSE IF  '${currentMonth}'=='07'
+      ...  BuiltIn.Set Variable  ก.ต.
+      ...  ELSE IF  '${currentMonth}'=='08'
+      ...  BuiltIn.Set Variable  ส.ค.
+      ...  ELSE IF  '${currentMonth}'=='09'
+      ...  BuiltIn.Set Variable  ก.ย.
+      ...  ELSE IF  '${currentMonth}'=='10'
+      ...  BuiltIn.Set Variable  ต.ค.
+      ...  ELSE IF  '${currentMonth}'=='11'
+      ...  BuiltIn.Set Variable  พ.ย.
+      ...  ELSE IF  '${currentMonth}'=='12'
+      ...  BuiltIn.Set Variable  ธ.ค.
     [Return]  ${MONTH}
 
+
+Get Current Year My Fund
+    ${year}   Get Current Date  result_format=%Y
+    ${yearBE}   Evaluate  ${year}+543
+    Log to Console   yearBE${yearBE}
+    ${RemoveStringYearBE}=    Remove String     ${yearBE}   25  26  27
+    Log to Console   RemoveStringYearBE${RemoveStringYearBE}
+    [Return]  ${RemoveStringYearBE}
 
 Click Button Interested in Invest
     AppiumLibrary.Click Element  //android.widget.Button[contains(@text,"สนใจลงทุน")]

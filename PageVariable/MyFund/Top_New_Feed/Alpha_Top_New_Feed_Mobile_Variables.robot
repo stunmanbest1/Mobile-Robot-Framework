@@ -38,6 +38,9 @@ ${varDetailCase8}  Dear value customer\nFund TINC-A meet target top earning 10% 
 ${varTopicCase9}  Automate notification action switch send by now
 ${varDetailCase9}  Dear value customer\nFund TEGRMF-A will be  terminate soon.\nHighly recommend to switch out.
 
+${varTopicCase10}   Automate notification action switch send by schedule
+${varDetailCase10}   Dear value customer\nFund TEGRMF-A will be  terminate soon.\nHighly recommend to switch out.
+
 ${UsernameAcc3}  accuser3
 ${UsernameAutomate1}  automate1
 ${PasswordAutomate1}  Tisco#1234

@@ -238,7 +238,7 @@ TESTCASE008_Single Feed Specific Action buy as schedule  #เว็บยัง�
 
 TESTCASE009_Single Feed Specific Action switch
     [Tags]  Switch
-     Open Application  
+    Open Application  
     ...    ${URL}  
     ...    udid=${DEVICE_UDIDLOGIN}  
     ...    platformName=${PLATFORM}  
@@ -262,6 +262,39 @@ TESTCASE009_Single Feed Specific Action switch
     Verify Button Back
     Press Button Back
     Verify Message Detail In Inbox  ${varTopicCase9}  ${varDetailCase9}
+    Click Button Interested in Invest
+    Verify Button Back
+    Click Pin   1  1  2  2  3  3
+    Verify Mobile Loading Is Done
+    Verify Default Transaction Screen  ${varNotActive}  ${varNotActive}  ${varActive}  ${varFundCodeTEGRMF-A}  ${varFundCodeTEGRMF-A}  ${varFundNameTEGRMF-A}
+
+TESTCASE010_Single Feed Specific Action switch as schedule
+    [Tags]  Switch
+     Open Application  
+    ...    ${URL}  
+    ...    udid=${DEVICE_UDIDLOGIN}  
+    ...    platformName=${PLATFORM}  
+    ...    platformVersion=${DEVICE_TARGET}  
+    ...    deviceName=${DEVICE_NAME}  
+    ...    app=${APP_LOCATION}  
+    ...    automationName=appium  
+    ...    noReset=true
+    Verify Progress Bra
+    Press Button Accept Cookie
+    Press Icon Notification
+    Verify Message Inbox  ${varTopicCase10}  ${varDetailCase10}
+    Verify Time on Inbox  11:00
+    Select Topic  ${varTopicCase10}
+    Verify Message Detail In Inbox  ${varTopicCase10}  ${varDetailCase10}
+    Verify Date Time In Message as Schedule  17:00
+    Verify Button Back
+    Verify Button Interested in Invest
+
+    Click Button Interested in Invest
+    Verify Label Header PIN
+    Verify Button Back
+    Press Button Back
+    Verify Message Detail In Inbox  ${varTopicCase10}  ${varDetailCase10}
     Click Button Interested in Invest
     Verify Button Back
     Click Pin   1  1  2  2  3  3
