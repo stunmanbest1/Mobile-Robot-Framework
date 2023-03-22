@@ -37,7 +37,8 @@ Verify Message Detail In Inbox
     [Arguments]  ${TopicValue}  ${DetailValue}
     AppiumLibrary.Wait Until Page Contains Element   ${locatAndroidMessageTopicInboxIn}  timeout=10s
     Sleep  4s
-    Text Shoud Be Equal  ${locatAndroidMessageTopicInboxIn}  ${TopicValue}
+    AppiumLibrary.Wait Until Page Contains Element   //android.widget.LinearLayout/android.widget.TextView[1][contains(@text,"${TopicValue}")]  timeout=10s
+    # Text Shoud Be Equal  ${locatAndroidMessageTopicInboxIn}  ${TopicValue}  #ถ้าใช้อันนี้ พอกด back กลับมาเป็นอีกค่า
     Text Shoud Be Equal  ${locatAndroidMessageDetailInboxIn}  ${DetailValue}
 
 Text Shoud Be Equal
@@ -227,7 +228,9 @@ Get Current Year My Fund
     ${year}   Get Current Date  result_format=%Y
     ${yearBE}   Evaluate  ${year}+543
     Log to Console   yearBE${yearBE}
-    ${RemoveStringYearBE}=    Remove String     ${yearBE}   25  26  27
+    ${convertstring}=  Convert To String  ${yearBE}
+    Log to Console     convertstring${convertstring}
+    ${RemoveStringYearBE}=    Remove String     ${convertstring}   25  26  27
     Log to Console   RemoveStringYearBE${RemoveStringYearBE}
     [Return]  ${RemoveStringYearBE}
 

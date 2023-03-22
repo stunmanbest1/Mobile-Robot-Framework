@@ -44,10 +44,11 @@ TESTCASE002_Single Feed Set Schedule Broadcast All
     Press Button Accept Cookie
     Press Icon Notification
     Verify Message Inbox  ${varTopicCase2}  ${varDetailCase2}
-    Verify Time on Inbox  17:00
+    Verify Time on Inbox  ${varTimeCase2}
     Select Topic  ${varTopicCase2}
     Verify Message Detail In Inbox  ${varTopicCase2}  ${varDetailCase2}
     Verify Button Back
+    Verify Date Time In Message as Schedule  ${varTimeCase2}
     Press Button Back
     Verify Message Inbox  ${varTopicCase2}  ${varDetailCase2}
 
@@ -96,9 +97,10 @@ TESTCASE004_Single Feed Specific Target By Schedule
 
     Press Icon Notification
     Verify Message Inbox  ${varTopicCase4}  ${varDetailCase4}
-    Verify Time on Inbox  17:00
+    Verify Time on Inbox  ${varTimeCase4}
     Select Topic  ${varTopicCase4}
     Verify Message Detail In Inbox  ${varTopicCase4}  ${varDetailCase4}
+    Verify Date Time In Message as Schedule  ${varTimeCase4}
     Verify Button Back
 
 
@@ -115,12 +117,10 @@ TESTCASE005_Single Feed Specific Contact Us by now
     ...    noReset=true
     Verify Progress Bra
     Press Button Accept Cookie
-
     # Click Accept on Popup Login
     # Login My Fund Mobile  ${UsernameAcc3}  ${PasswordAcc3}
     # Input OTP  123456  #รอว่าฟิกให้เป็นค่าอะไร
     # Click Pin   1  1  2  2  3  3
-
     Press Icon Notification
     Verify Message Inbox  ${varTopicCase5}  ${varDetailCase5}
     Select Topic  ${varTopicCase5}
@@ -128,7 +128,6 @@ TESTCASE005_Single Feed Specific Contact Us by now
     Verify Button Back
     Verify Button Contact Us
     Click Button Contact Us
-    
     Verify Label Header PIN
     Verify Button Back
     Press Button Back
@@ -154,13 +153,13 @@ TESTCASE006_Single Feed Specific Contact Us by schedule
     Press Button Accept Cookie
     Press Icon Notification
     Verify Message Inbox  ${varTopicCase6}  ${varDetailCase6}
-    Verify Time on Inbox  11:00
+    Verify Time on Inbox  ${varTimeCase6}
     Select Topic  ${varTopicCase6}
     Verify Message Detail In Inbox  ${varTopicCase6}  ${varDetailCase6}
     Verify Button Back
+    Verify Date Time In Message as Schedule  ${varTimeCase6}
     Verify Button Contact Us
     Click Button Contact Us
-    
     Verify Label Header PIN
     Verify Button Back
     Press Button Back
@@ -202,7 +201,7 @@ TESTCASE007_Single Feed Specific Action buy
     Verify Mobile Loading Is Done
     Verify Default Transaction Screen  ${varActive}  ${varNotActive}  ${varNotActive}  ${varFundCodeTINC-A}  ${varFundCodeTINC-A}  ${varFundNameTINC-A}
 
-TESTCASE008_Single Feed Specific Action buy as schedule  #เว็บยังส่งไม่ได้
+TESTCASE008_Single Feed Specific Action buy as schedule
     [Tags]  Buy
     Open Application  
     ...    ${URL}  
@@ -217,18 +216,17 @@ TESTCASE008_Single Feed Specific Action buy as schedule  #เว็บยัง�
     Press Button Accept Cookie
     Press Icon Notification
     Verify Message Inbox  ${varTopicCase8}  ${varDetailCase8}
-    Verify Time on Inbox  11:00
+    Verify Time on Inbox  ${varTimeCase8}
     Select Topic  ${varTopicCase8}
     Verify Message Detail In Inbox  ${varTopicCase8}  ${varDetailCase8}
     Verify Button Back
     Verify Button Interested in Invest
-    #ขาด Date
-    # Verify Date In Message
+    Verify Date Time In Message as Schedule  ${varTimeCase8}
     Click Button Interested in Invest
     Verify Label Header PIN
     Verify Button Back
     Press Button Back
-    Verify Message Detail In Inbox  ${varTopicCase8}  ${varTopicCase8}
+    Verify Message Detail In Inbox  ${varTopicCase8}  ${varDetailCase8}
     Click Button Interested in Invest
     Verify Button Back
     Click Pin   1  1  2  2  3  3
@@ -283,13 +281,12 @@ TESTCASE010_Single Feed Specific Action switch as schedule
     Press Button Accept Cookie
     Press Icon Notification
     Verify Message Inbox  ${varTopicCase10}  ${varDetailCase10}
-    Verify Time on Inbox  11:00
+    Verify Time on Inbox  ${varTimeCase10}
     Select Topic  ${varTopicCase10}
     Verify Message Detail In Inbox  ${varTopicCase10}  ${varDetailCase10}
-    Verify Date Time In Message as Schedule  17:00
+    Verify Date Time In Message as Schedule  ${varTimeCase10}
     Verify Button Back
     Verify Button Interested in Invest
-
     Click Button Interested in Invest
     Verify Label Header PIN
     Verify Button Back

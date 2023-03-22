@@ -57,5 +57,11 @@ ${varFundNameTINC-A}  กองทุนเปิด ทิสโก้ อิ�
 ${varFundCodeTEGRMF-A}  TEGRMF-A
 ${varFundNameTEGRMF-A}  กองทุนเปิด ทิสโก้หุ้นทุนเพื่อการเลี้ยงชีพ ชนิดหน่วยลงทุน A
 
+${varTimeCase2}  17:00
+${varTimeCase4}  17:00
+${varTimeCase6}  17:00
+${varTimeCase8}  15:30
+${varTimeCase10}  15:40
+
 #C:/Users/เบส/Desktop/TISCO/Mobile App/BestTest/nodeconfig/nodeconfig-android-v11.json
 #C:/Users/เบส/Desktop/TISCO/Mobile App/BestTest/nodeconfig/nodeconfig-android-v12.json
