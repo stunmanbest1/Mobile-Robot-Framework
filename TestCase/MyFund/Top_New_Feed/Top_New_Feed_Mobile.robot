@@ -268,7 +268,7 @@ TESTCASE009_Single Feed Specific Action switch
 
 TESTCASE010_Single Feed Specific Action switch as schedule
     [Tags]  Switch
-     Open Application  
+    Open Application  
     ...    ${URL}  
     ...    udid=${DEVICE_UDIDLOGIN}  
     ...    platformName=${PLATFORM}  
@@ -297,6 +297,31 @@ TESTCASE010_Single Feed Specific Action switch as schedule
     Click Pin   1  1  2  2  3  3
     Verify Mobile Loading Is Done
     Verify Default Transaction Screen  ${varNotActive}  ${varNotActive}  ${varActive}  ${varFundCodeTEGRMF-A}  ${varFundCodeTEGRMF-A}  ${varFundNameTEGRMF-A}
+
+TESTCASE011_Multiple Feed Specific target
+    [Tags]  Target   Multiple
+    Open Application  
+    ...    ${URL}  
+    ...    udid=${DEVICE_UDIDLOGIN}  
+    ...    platformName=${PLATFORM}  
+    ...    platformVersion=${DEVICE_TARGET}  
+    ...    deviceName=${DEVICE_NAME}  
+    ...    app=${APP_LOCATION}  
+    ...    automationName=appium  
+    ...    noReset=true
+    Verify Progress Bra
+    Press Button Accept Cookie
+    Press Icon Notification
+    Verify Message Inbox  ${varTopicCase11_1}  ${varDetailCase11_1}
+    Verify Message Inbox  ${varTopicCase11_2}  ${varDetailCase11_2}
+    Select Topic  ${varTopicCase11_1}
+    Verify Message Detail In Inbox  ${varTopicCase11_1}  ${varDetailCase11_1}
+    Verify Button Back
+    Press Button Back
+    Select Topic  ${varTopicCase11_2}
+    Verify Message Detail In Inbox  ${varTopicCase11_2}  ${varDetailCase11_2}
+    Verify Button Back
+
 
 
 TESTCASE018_multiple feed switch as schedule
