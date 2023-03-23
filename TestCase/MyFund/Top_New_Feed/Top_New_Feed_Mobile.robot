@@ -301,7 +301,7 @@ TESTCASE010_Single Feed Specific Action switch as schedule
 
 TESTCASE018_multiple feed switch as schedule
     [Tags]  Switch
-     Open Application  
+    Open Application  
     ...    ${URL}  
     ...    udid=${DEVICE_UDIDLOGIN}  
     ...    platformName=${PLATFORM}  
@@ -313,7 +313,7 @@ TESTCASE018_multiple feed switch as schedule
     Verify Progress Bra
     Press Button Accept Cookie
     Press Icon Notification
-    # Verify Message Inbox  ${VarMessageMultipleCase18}  ${VarMessageDetailMultipleCase18}
+    Verify Message Inbox  ${VarMessageMultipleCase18}  ${VarMessageDetailMultipleCase18}
     # Verify Time on Inbox  ${varTimeCase18}
     Select Topic  ${VarMessageMultipleCase18}
     Verify Message Detail In Inbox  ${VarMessageMultipleCase18}  ${VarMessageDetailMultipleCase18}

@@ -42,7 +42,10 @@ ${varTopicCase10}   Automate notification action switch send by schedule
 ${varDetailCase10}   Dear value customer\nFund TEGRMF-A will be  terminate soon.\nHighly recommend to switch out.
 
 ${VarMessageMultipleCase18}  Automate schedule mutiple notification switch#1
-${VarMessageDetailMultipleCase18}  Dear value customer\nFund TEGRMF-A will be terminate soon.\nHighly recommend to switch out.
+${VarMessageDetailMultipleCase18}  Dear value customer\nFund TEGRMF-A will be ${SPACE}terminate soon.\nHighly recommend to switch out.
+
+
+
 
 
 
