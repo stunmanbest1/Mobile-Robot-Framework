@@ -328,4 +328,4 @@ TESTCASE018_multiple feed switch as schedule
     Click Button Interested in Invest
     Click Pin   1  1  2  2  3  3
     Verify Mobile Loading Is Done
-    Verify Default Transaction Screen  ${varNotActive}  ${varNotActive}  ${varActive}  ${varFundCodeTEGRMF-A}  ${varFundCodeTEGRMF-A}  ${varFundNameTEGRMF-A}
+    Verify Default Transaction Screen  ${varNotActive}  ${varNotActive}  ${varActive}  ${varFundCodeTEGRMF-A}  ${varFundCodeTEGRMF-A}  ${varFundNameTEGRMF-A}  
