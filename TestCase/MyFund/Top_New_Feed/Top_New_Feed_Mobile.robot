@@ -298,3 +298,23 @@ TESTCASE010_Single Feed Specific Action switch as schedule
     Verify Mobile Loading Is Done
     Verify Default Transaction Screen  ${varNotActive}  ${varNotActive}  ${varActive}  ${varFundCodeTEGRMF-A}  ${varFundCodeTEGRMF-A}  ${varFundNameTEGRMF-A}
 
+
+TESTCASE018_multiple feed switch as schedule
+    [Tags]  Switch
+     Open Application  
+    ...    ${URL}  
+    ...    udid=${DEVICE_UDIDLOGIN}  
+    ...    platformName=${PLATFORM}  
+    ...    platformVersion=${DEVICE_TARGET}  
+    ...    deviceName=${DEVICE_NAME}  
+    ...    app=${APP_LOCATION}  
+    ...    automationName=appium  
+    ...    noReset=true
+    Verify Progress Bra
+    Press Button Accept Cookie
+    Press Icon Notification
+    # Verify Message Inbox  ${VarMessageMultipleCase18}  ${VarMessageDetailMultipleCase18}
+    # Verify Time on Inbox  ${varTimeCase18}
+    Select Topic  ${VarMessageMultipleCase18}
+    Verify Message Detail In Inbox  ${VarMessageMultipleCase18}  ${VarMessageDetailMultipleCase18}
+    # Verify Date Time In Message as Schedule  ${varTimeCase18}

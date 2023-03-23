@@ -41,6 +41,13 @@ ${varDetailCase9}  Dear value customer\nFund TEGRMF-A will be  terminate soon.\n
 ${varTopicCase10}   Automate notification action switch send by schedule
 ${varDetailCase10}   Dear value customer\nFund TEGRMF-A will be  terminate soon.\nHighly recommend to switch out.
 
+${VarMessageMultipleCase18}  Automate schedule mutiple notification switch#1
+${VarMessageDetailMultipleCase18}  Dear value customer\nFund TEGRMF-A will be terminate soon.\nHighly recommend to switch out.
+
+
+
+
+
 ${UsernameAcc3}  accuser3
 ${UsernameAutomate1}  automate1
 ${PasswordAutomate1}  Tisco#1234
@@ -62,6 +69,7 @@ ${varTimeCase4}  17:00
 ${varTimeCase6}  17:00
 ${varTimeCase8}  15:30
 ${varTimeCase10}  15:40
+${varTimeCase18}  13:07
 
 #C:/Users/เบส/Desktop/TISCO/Mobile App/BestTest/nodeconfig/nodeconfig-android-v11.json
 #C:/Users/เบส/Desktop/TISCO/Mobile App/BestTest/nodeconfig/nodeconfig-android-v12.json
