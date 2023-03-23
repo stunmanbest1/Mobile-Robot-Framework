@@ -41,8 +41,12 @@ ${varDetailCase9}  Dear value customer\nFund TEGRMF-A will be  terminate soon.\n
 ${varTopicCase10}   Automate notification action switch send by schedule
 ${varDetailCase10}   Dear value customer\nFund TEGRMF-A will be  terminate soon.\nHighly recommend to switch out.
 
-${VarMessageMultipleCase18}  Automate schedule mutiple notification switch#1
-${VarMessageDetailMultipleCase18}  Dear value customer\nFund TEGRMF-A will be terminate soon.\nHighly recommend to switch out.
+${VarMessageMultipleCase18#1}   Automate schedule mutiple notification switch#1
+${VarMessageDetailMultipleCase18}   Dear value customer\nFund TEGRMF-A will be ${SPACE}terminate soon.\nHighly recommend to switch out.
+
+${VarMessageMultipleCase18#2}   Automate schedule mutiple notification switch#2
+${VarMessageDetailMultipleCase18#2}  Dear value customer\nFund rate report for TEGRMF-A was poor performance.\nHighly recommend to switch out.
+
 
 
 
@@ -69,7 +73,7 @@ ${varTimeCase4}  17:00
 ${varTimeCase6}  17:00
 ${varTimeCase8}  15:30
 ${varTimeCase10}  15:40
-${varTimeCase18}  13:07
+${varTimeCase18}  13:53
 
 #C:/Users/เบส/Desktop/TISCO/Mobile App/BestTest/nodeconfig/nodeconfig-android-v11.json
 #C:/Users/เบส/Desktop/TISCO/Mobile App/BestTest/nodeconfig/nodeconfig-android-v12.json

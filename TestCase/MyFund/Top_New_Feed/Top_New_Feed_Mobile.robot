@@ -313,8 +313,19 @@ TESTCASE018_multiple feed switch as schedule
     Verify Progress Bra
     Press Button Accept Cookie
     Press Icon Notification
-    # Verify Message Inbox  ${VarMessageMultipleCase18}  ${VarMessageDetailMultipleCase18}
-    # Verify Time on Inbox  ${varTimeCase18}
-    Select Topic  ${VarMessageMultipleCase18}
-    Verify Message Detail In Inbox  ${VarMessageMultipleCase18}  ${VarMessageDetailMultipleCase18}
-    # Verify Date Time In Message as Schedule  ${varTimeCase18}
+    Verify Message Inbox  ${VarMessageMultipleCase18#1}  ${VarMessageDetailMultipleCase18}
+    Verify Time on Inbox  ${varTimeCase18}
+    Select Topic  ${VarMessageMultipleCase18#1}
+    Verify Message Detail In Inbox  ${VarMessageMultipleCase18#1}  ${VarMessageDetailMultipleCase18}
+    Verify Date Time In Message as Schedule  ${varTimeCase18}
+    Verify Button Interested in Invest
+    Press Button Back
+    Verify Message Inbox  ${VarMessageMultipleCase18#2}  ${VarMessageDetailMultipleCase18#2}
+    Verify Time on Inbox  ${varTimeCase18}
+    Select Topic  ${VarMessageMultipleCase18#2}
+    Verify Message Detail In Inbox  ${VarMessageMultipleCase18#2}  ${VarMessageDetailMultipleCase18#2}
+    Verify Button Interested in Invest
+    Click Button Interested in Invest
+    Click Pin   1  1  2  2  3  3
+    Verify Mobile Loading Is Done
+    Verify Default Transaction Screen  ${varNotActive}  ${varNotActive}  ${varActive}  ${varFundCodeTEGRMF-A}  ${varFundCodeTEGRMF-A}  ${varFundNameTEGRMF-A}
