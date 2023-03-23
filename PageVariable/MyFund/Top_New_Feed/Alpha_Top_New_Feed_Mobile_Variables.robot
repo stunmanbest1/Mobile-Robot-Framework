@@ -41,11 +41,24 @@ ${varDetailCase9}  Dear value customer\nFund TEGRMF-A will be  terminate soon.\n
 ${varTopicCase10}   Automate notification action switch send by schedule
 ${varDetailCase10}   Dear value customer\nFund TEGRMF-A will be  terminate soon.\nHighly recommend to switch out.
 
+<<<<<<< HEAD
 ${VarMessageMultipleCase18#1}   Automate schedule mutiple notification switch#1
 ${VarMessageDetailMultipleCase18}   Dear value customer\nFund TEGRMF-A will be ${SPACE}terminate soon.\nHighly recommend to switch out.
 
 ${VarMessageMultipleCase18#2}   Automate schedule mutiple notification switch#2
 ${VarMessageDetailMultipleCase18#2}  Dear value customer\nFund rate report for TEGRMF-A was poor performance.\nHighly recommend to switch out.
+=======
+${varTopicCase11_1}  Automate mutiple notification#1
+${varTopicCase11_2}  Automate mutiple notification#2
+
+${varDetailCase11_1}  Simple Detail for notification topic 1
+${varDetailCase11_2}  Simple Detail for notification topic 2
+
+${VarMessageMultipleCase18}  Automate schedule mutiple notification switch#1
+${VarMessageDetailMultipleCase18}  Dear value customer\nFund TEGRMF-A will be ${SPACE}terminate soon.\nHighly recommend to switch out.
+
+
+>>>>>>> faf702387eac5b217fa573221316f3aaa6bed967
 
 
 
