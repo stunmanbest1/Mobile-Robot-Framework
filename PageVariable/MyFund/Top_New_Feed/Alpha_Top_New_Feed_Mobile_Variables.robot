@@ -41,6 +41,16 @@ ${varDetailCase9}  Dear value customer\nFund TEGRMF-A will be  terminate soon.\n
 ${varTopicCase10}   Automate notification action switch send by schedule
 ${varDetailCase10}   Dear value customer\nFund TEGRMF-A will be  terminate soon.\nHighly recommend to switch out.
 
+${VarMessageMultipleCase14#1}  Automate mutiple notification Buy#1
+${VarMessageDetailMultipleCase14}  Dear value customer,\nFund TINC-A meet target top earning 10% in 3 month.\nIf you want to invest on this fund please buy.
+
+${VarMessageMultipleCase14#2}  Automate mutiple notification Buy#2
+${VarMessageDetailMultipleCase14#2}  Dear value customer,\nFund TINC-A win fund award from SET.\nIf you want to invest on this fund please buy.
+
+
+
+
+
 ${VarMessageMultipleCase15#1}  Automate mutiple notification Buy#1
 ${VarMessageDetailMultipleCase15}  Dear value customer,\nFund TINC-A meet target top earning 10% in 3 month.\nIf you want to invest on this fund please buy.
 
@@ -98,8 +108,9 @@ ${varTimeCase4}  17:00
 ${varTimeCase6}  17:00
 ${varTimeCase8}  15:30
 ${varTimeCase10}  15:40
-${varTimeCase18}  8:40
-${varTimeCase16}  10:45
+${varTimeCase18}  17:00
+${varTimeCase16}  17:00
+${varTimeCase14}  13:35
 
 #C:/Users/เบส/Desktop/TISCO/Mobile App/BestTest/nodeconfig/nodeconfig-android-v11.json
 #C:/Users/เบส/Desktop/TISCO/Mobile App/BestTest/nodeconfig/nodeconfig-android-v12.json
