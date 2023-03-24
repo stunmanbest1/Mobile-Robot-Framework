@@ -41,15 +41,21 @@ ${varDetailCase9}  Dear value customer\nFund TEGRMF-A will be  terminate soon.\n
 ${varTopicCase10}   Automate notification action switch send by schedule
 ${varDetailCase10}   Dear value customer\nFund TEGRMF-A will be  terminate soon.\nHighly recommend to switch out.
 
-${VarMessageMultipleCase14#1}  Automate mutiple notification Buy#1
-${VarMessageDetailMultipleCase14}  Dear value customer,\nFund TINC-A meet target top earning 10% in 3 month.\nIf you want to invest on this fund please buy.
+${VarMessageMultipleCase13#1}  Automate contact us mutiple notification #1
+${VarMessageDetailMultipleCase13}  Sample Detail for contact us notification topic 1
 
-${VarMessageMultipleCase14#2}  Automate mutiple notification Buy#2
-${VarMessageDetailMultipleCase14#2}  Dear value customer,\nFund TINC-A win fund award from SET.\nIf you want to invest on this fund please buy.
-
-
+${VarMessageMultipleCase13#2}  Automate contact us mutiple notification #2
+${VarMessageDetailMultipleCase13#2}  Sample Detail for contact us notification topic 2
 
 
+
+
+
+${VarMessageMultipleCase14#1}  Automate schedule contact us mutiple notification #1
+${VarMessageDetailMultipleCase14}  Sample Detail for schedule contact us notification topic 1
+
+${VarMessageMultipleCase14#2}  Automate schedule contact us mutiple notification #2
+${VarMessageDetailMultipleCase14#2}  Sample Detail for schedule contact us notification topic 2
 
 ${VarMessageMultipleCase15#1}  Automate mutiple notification Buy#1
 ${VarMessageDetailMultipleCase15}  Dear value customer,\nFund TINC-A meet target top earning 10% in 3 month.\nIf you want to invest on this fund please buy.
@@ -110,7 +116,7 @@ ${varTimeCase8}  15:30
 ${varTimeCase10}  15:40
 ${varTimeCase18}  17:00
 ${varTimeCase16}  17:00
-${varTimeCase14}  13:35
+${varTimeCase14}  14:07
 
 #C:/Users/เบส/Desktop/TISCO/Mobile App/BestTest/nodeconfig/nodeconfig-android-v11.json
 #C:/Users/เบส/Desktop/TISCO/Mobile App/BestTest/nodeconfig/nodeconfig-android-v12.json

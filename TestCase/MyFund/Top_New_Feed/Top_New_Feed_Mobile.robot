@@ -322,7 +322,37 @@ TESTCASE011_Multiple Feed Specific target
     Verify Message Detail In Inbox  ${varTopicCase11_2}  ${varDetailCase11_2}
     Verify Button Back
 
-TESTCASE014_Multiple Feed Contact By Schedule
+TESTCASE013_Multiple Feed Contact us
+    [Tags]  Contact_us  Multiple
+    Open Application  
+    ...    ${URL}  
+    ...    udid=${DEVICE_UDIDLOGIN}  
+    ...    platformName=${PLATFORM}  
+    ...    platformVersion=${DEVICE_TARGET}  
+    ...    deviceName=${DEVICE_NAME}  
+    ...    app=${APP_LOCATION}  
+    ...    automationName=appium  
+    ...    noReset=true
+    Verify Progress Bra
+    Press Button Accept Cookie
+    Press Icon Notification
+    Verify Message Inbox  ${VarMessageMultipleCase13#1}  ${VarMessageDetailMultipleCase13}
+    Select Topic  ${VarMessageMultipleCase14#1}
+    Verify Message Detail In Inbox  ${VarMessageMultipleCase13#1}  ${VarMessageDetailMultipleCase13}
+    Verify Button Contact Us
+    Press Button Back
+    Verify Message Inbox  ${VarMessageMultipleCase13#2}  ${VarMessageDetailMultipleCase13#2}
+    Select Topic  ${VarMessageMultipleCase13#2}
+    Verify Message Detail In Inbox  ${VarMessageMultipleCase13#2}  ${VarMessageDetailMultipleCase13#2}
+    Verify Button Contact Us
+    Click Button Contact Us
+    Click Pin   1  1  2  2  3  3
+    Verify Mobile Loading Is Done
+    Verify Contact Us VDO CALL  ${varHeaderVDOCALL}  ${varAnnounceVDOCALL}  ${varVDOCALLDetail1}  ${varVDOCALLDetail2}
+    Verify Button Start VDO CALL
+
+
+TESTCASE014_Multiple Feed Contact us By Schedule
     [Tags]  Contact_us  Multiple
     Open Application  
     ...    ${URL}  
@@ -341,17 +371,18 @@ TESTCASE014_Multiple Feed Contact By Schedule
     Select Topic  ${VarMessageMultipleCase14#1}
     Verify Message Detail In Inbox  ${VarMessageMultipleCase14#1}  ${VarMessageDetailMultipleCase14}
     Verify Date Time In Message as Schedule  ${varTimeCase14}
-    Verify Button Interested in Invest
+    Verify Button Contact Us
     Press Button Back
     Verify Message Inbox  ${VarMessageMultipleCase14#2}  ${VarMessageDetailMultipleCase14#2}
     Verify Time on Inbox  ${varTimeCase14}
     Select Topic  ${VarMessageMultipleCase14#2}
     Verify Message Detail In Inbox  ${VarMessageMultipleCase14#2}  ${VarMessageDetailMultipleCase14#2}
-    Verify Button Interested in Invest
-    Click Button Interested in Invest
+    Verify Button Contact Us
+    Click Button Contact Us
     Click Pin   1  1  2  2  3  3
     Verify Mobile Loading Is Done
-    Verify Default Transaction Screen  ${varActive}  ${varNotActive}  ${varNotActive}  ${varFundCodeTINC-A}  ${varFundCodeTINC-A}  ${varFundNameTINC-A} 
+    Verify Contact Us VDO CALL  ${varHeaderVDOCALL}  ${varAnnounceVDOCALL}  ${varVDOCALLDetail1}  ${varVDOCALLDetail2}
+    Verify Button Start VDO CALL
 
 TESTCASE015_Multiple Feed Buy
     [Tags]  Buy  Multiple

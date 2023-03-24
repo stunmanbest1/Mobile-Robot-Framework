@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.0.2 (Python 3.11.1 on win32)" generated="20230324 13:54:54.231" rpa="false" schemaversion="3">
+<robot generator="Robot 6.0.2 (Python 3.11.1 on win32)" generated="20230324 15:40:07.887" rpa="false" schemaversion="3">
 <suite id="s1" name="Top New Feed Mobile" source="D:\Mobile Robotframework\TestCase\MyFund\Top_New_Feed\Top_New_Feed_Mobile.robot">
-<test id="s1-t1" name="TESTCASE014_Multiple Feed Contact By Schedule" line="325">
+<test id="s1-t1" name="TESTCASE014_Multiple Feed Contact us By Schedule" line="355">
 <kw name="Open Application" library="AppiumLibrary">
 <arg>${URL}</arg>
 <arg>udid=${DEVICE_UDIDLOGIN}</arg>
@@ -18,18 +18,18 @@ Please check https://github.com/appium/appium/blob/master/docs/en/writing-runnin
 | remote_url          | Yes    | Appium server url |
 | alias               | no     | alias             |
 | strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
-<status status="PASS" starttime="20230324 13:54:54.407" endtime="20230324 13:55:01.633"/>
+<status status="PASS" starttime="20230324 15:40:08.072" endtime="20230324 15:40:15.838"/>
 </kw>
 <kw name="Verify Progress Bra" library="Top_New_Feed_Mobile_Keywords">
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <arg>//android.widget.ProgressBar[@resource-id="com.tisconet.ftc.sit:id/progressBar"]</arg>
 <arg>timeout=20s</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<msg timestamp="20230324 13:55:05.023" level="INFO">xpath criteria: //android.widget.ProgressBar[@resource-id="com.tisconet.ftc.sit:id/progressBar"]
+<msg timestamp="20230324 15:40:19.321" level="INFO">xpath criteria: //android.widget.ProgressBar[@resource-id="com.tisconet.ftc.sit:id/progressBar"]
 xpath criteria: //android.widget.ProgressBar[@resource-id="com.tisconet.ftc.sit:id/progressBar"]</msg>
-<status status="PASS" starttime="20230324 13:55:01.634" endtime="20230324 13:55:05.023"/>
+<status status="PASS" starttime="20230324 15:40:15.839" endtime="20230324 15:40:19.321"/>
 </kw>
-<status status="PASS" starttime="20230324 13:55:01.633" endtime="20230324 13:55:05.023"/>
+<status status="PASS" starttime="20230324 15:40:15.839" endtime="20230324 15:40:19.321"/>
 </kw>
 <kw name="Press Button Accept Cookie" library="Top_New_Feed_Mobile_Keywords">
 <kw name="Run Keyword And Return Status" library="BuiltIn">
@@ -42,12 +42,13 @@ xpath criteria: //android.widget.ProgressBar[@resource-id="com.tisconet.ftc.sit:
 <arg>${locatAndroidButtonAcceptCookie}</arg>
 <arg>timeout=10s</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<msg timestamp="20230324 13:55:08.227" level="INFO">xpath criteria: //android.widget.Button[2]
+<msg timestamp="20230324 15:40:22.704" level="INFO">xpath criteria: //android.widget.Button[2]
+xpath criteria: //android.widget.Button[2]
 xpath criteria: //android.widget.Button[2]</msg>
-<status status="PASS" starttime="20230324 13:55:05.024" endtime="20230324 13:55:08.227"/>
+<status status="PASS" starttime="20230324 15:40:19.322" endtime="20230324 15:40:22.704"/>
 </kw>
-<msg timestamp="20230324 13:55:08.227" level="INFO">${Status} = True</msg>
-<status status="PASS" starttime="20230324 13:55:05.024" endtime="20230324 13:55:08.227"/>
+<msg timestamp="20230324 15:40:22.704" level="INFO">${Status} = True</msg>
+<status status="PASS" starttime="20230324 15:40:19.322" endtime="20230324 15:40:22.704"/>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <arg>'${Status}'=='True'</arg>
@@ -57,10 +58,10 @@ xpath criteria: //android.widget.Button[2]</msg>
 <kw name="Sleep" library="BuiltIn">
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230324 13:55:11.229" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20230324 13:55:08.228" endtime="20230324 13:55:11.229"/>
+<msg timestamp="20230324 15:40:25.706" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230324 15:40:22.704" endtime="20230324 15:40:25.706"/>
 </kw>
-<status status="PASS" starttime="20230324 13:55:08.227" endtime="20230324 13:55:11.229"/>
+<status status="PASS" starttime="20230324 15:40:22.704" endtime="20230324 15:40:25.706"/>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <arg>'${Status}'=='True'</arg>
@@ -70,35 +71,35 @@ xpath criteria: //android.widget.Button[2]</msg>
 <kw name="Click Element" library="AppiumLibrary">
 <arg>${locatAndroidButtonAcceptCookie}</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20230324 13:55:11.232" level="INFO">Clicking element '//android.widget.Button[2]'.</msg>
-<msg timestamp="20230324 13:55:11.331" level="INFO">xpath criteria: //android.widget.Button[2]</msg>
-<status status="PASS" starttime="20230324 13:55:11.229" endtime="20230324 13:55:11.331"/>
+<msg timestamp="20230324 15:40:25.709" level="INFO">Clicking element '//android.widget.Button[2]'.</msg>
+<msg timestamp="20230324 15:40:25.824" level="INFO">xpath criteria: //android.widget.Button[2]</msg>
+<status status="PASS" starttime="20230324 15:40:25.706" endtime="20230324 15:40:25.824"/>
 </kw>
-<status status="PASS" starttime="20230324 13:55:11.229" endtime="20230324 13:55:11.331"/>
+<status status="PASS" starttime="20230324 15:40:25.706" endtime="20230324 15:40:25.825"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>Status=${Status}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20230324 13:55:11.331" endtime="20230324 13:55:11.332"/>
+<status status="PASS" starttime="20230324 15:40:25.825" endtime="20230324 15:40:25.825"/>
 </kw>
-<status status="PASS" starttime="20230324 13:55:05.024" endtime="20230324 13:55:11.332"/>
+<status status="PASS" starttime="20230324 15:40:19.322" endtime="20230324 15:40:25.825"/>
 </kw>
 <kw name="Press Icon Notification" library="Top_New_Feed_Mobile_Keywords">
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <arg>${locatAndroidIconNotification}</arg>
 <arg>timeout=10s</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<msg timestamp="20230324 13:55:13.471" level="INFO">xpath criteria: //android.widget.FrameLayout[@resource-id="com.tisconet.ftc.sit:id/notification"]</msg>
-<status status="PASS" starttime="20230324 13:55:11.332" endtime="20230324 13:55:13.471"/>
+<msg timestamp="20230324 15:40:27.717" level="INFO">xpath criteria: //android.widget.FrameLayout[@resource-id="com.tisconet.ftc.sit:id/notification"]</msg>
+<status status="PASS" starttime="20230324 15:40:25.826" endtime="20230324 15:40:27.717"/>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <arg>${locatAndroidIconNotification}</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20230324 13:55:13.474" level="INFO">Clicking element '//android.widget.FrameLayout[@resource-id="com.tisconet.ftc.sit:id/notification"]'.</msg>
-<msg timestamp="20230324 13:55:13.564" level="INFO">xpath criteria: //android.widget.FrameLayout[@resource-id="com.tisconet.ftc.sit:id/notification"]</msg>
-<status status="PASS" starttime="20230324 13:55:13.472" endtime="20230324 13:55:13.564"/>
+<msg timestamp="20230324 15:40:27.721" level="INFO">Clicking element '//android.widget.FrameLayout[@resource-id="com.tisconet.ftc.sit:id/notification"]'.</msg>
+<msg timestamp="20230324 15:40:27.841" level="INFO">xpath criteria: //android.widget.FrameLayout[@resource-id="com.tisconet.ftc.sit:id/notification"]</msg>
+<status status="PASS" starttime="20230324 15:40:27.717" endtime="20230324 15:40:27.841"/>
 </kw>
-<status status="PASS" starttime="20230324 13:55:11.332" endtime="20230324 13:55:13.564"/>
+<status status="PASS" starttime="20230324 15:40:25.826" endtime="20230324 15:40:27.841"/>
 </kw>
 <kw name="Verify Message Inbox" library="Top_New_Feed_Mobile_Keywords">
 <arg>${VarMessageMultipleCase14#1}</arg>
@@ -107,31 +108,29 @@ xpath criteria: //android.widget.Button[2]</msg>
 <arg>${locatAndroidMessageTopicInbox}</arg>
 <arg>timeout=10s</arg>
 <doc>Waits until element specified with `locator` appears on current page.</doc>
-<msg timestamp="20230324 13:55:15.038" level="INFO">xpath criteria: //android.view.ViewGroup[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.TextView
+<msg timestamp="20230324 15:40:29.408" level="INFO">xpath criteria: //android.view.ViewGroup[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.TextView
 xpath criteria: //android.view.ViewGroup[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.TextView</msg>
-<status status="PASS" starttime="20230324 13:55:13.565" endtime="20230324 13:55:15.038"/>
+<status status="PASS" starttime="20230324 15:40:27.842" endtime="20230324 15:40:29.408"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>4s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230324 13:55:19.038" level="INFO">Slept 4 seconds</msg>
-<status status="PASS" starttime="20230324 13:55:15.038" endtime="20230324 13:55:19.038"/>
+<msg timestamp="20230324 15:40:33.408" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20230324 15:40:29.408" endtime="20230324 15:40:33.408"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="AppiumLibrary">
 <arg>//android.widget.LinearLayout/android.widget.LinearLayout/android.widget.TextView[contains(@text,"${TopicValue}")]</arg>
 <doc>Waits until element specified with `locator` appears on current page.</doc>
-<msg timestamp="20230324 13:55:19.100" level="INFO">xpath criteria: //android.widget.LinearLayout/android.widget.LinearLayout/android.widget.TextView[contains(@text,"Automate mutiple notification Buy#1")]</msg>
-<status status="PASS" starttime="20230324 13:55:19.038" endtime="20230324 13:55:19.100"/>
+<msg timestamp="20230324 15:40:33.466" level="INFO">xpath criteria: //android.widget.LinearLayout/android.widget.LinearLayout/android.widget.TextView[contains(@text,"Automate schedule contact us mutiple notification #1")]</msg>
+<status status="PASS" starttime="20230324 15:40:33.408" endtime="20230324 15:40:33.466"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="AppiumLibrary">
 <arg>//android.widget.LinearLayout/android.widget.LinearLayout/android.widget.TextView[1][contains(@text,"${DetailValue}")]</arg>
 <doc>Waits until element specified with `locator` appears on current page.</doc>
-<msg timestamp="20230324 13:55:19.154" level="INFO">xpath criteria: //android.widget.LinearLayout/android.widget.LinearLayout/android.widget.TextView[1][contains(@text,"Dear value customer,
-Fund TINC-A meet target top earning 10% in 3 month.
-If you want to invest on this fund please buy.")]</msg>
-<status status="PASS" starttime="20230324 13:55:19.100" endtime="20230324 13:55:19.154"/>
+<msg timestamp="20230324 15:40:33.518" level="INFO">xpath criteria: //android.widget.LinearLayout/android.widget.LinearLayout/android.widget.TextView[1][contains(@text,"Sample Detail for schedule contact us notification topic 1")]</msg>
+<status status="PASS" starttime="20230324 15:40:33.466" endtime="20230324 15:40:33.518"/>
 </kw>
-<status status="PASS" starttime="20230324 13:55:13.565" endtime="20230324 13:55:19.154"/>
+<status status="PASS" starttime="20230324 15:40:27.842" endtime="20230324 15:40:33.519"/>
 </kw>
 <kw name="Verify Time on Inbox" library="Top_New_Feed_Mobile_Keywords">
 <arg>${varTimeCase14}</arg>
@@ -139,27 +138,27 @@ If you want to invest on this fund please buy.")]</msg>
 <arg>//android.widget.RelativeLayout//*[contains(@text,"${ExpectValue}")]</arg>
 <arg>timeout=20s</arg>
 <doc>Waits until element specified with `locator` appears on current page.</doc>
-<msg timestamp="20230324 13:55:19.219" level="INFO">xpath criteria: //android.widget.RelativeLayout//*[contains(@text,"13:35")]</msg>
-<status status="PASS" starttime="20230324 13:55:19.155" endtime="20230324 13:55:19.219"/>
+<msg timestamp="20230324 15:40:33.590" level="INFO">xpath criteria: //android.widget.RelativeLayout//*[contains(@text,"14:07")]</msg>
+<status status="PASS" starttime="20230324 15:40:33.519" endtime="20230324 15:40:33.590"/>
 </kw>
-<status status="PASS" starttime="20230324 13:55:19.155" endtime="20230324 13:55:19.219"/>
+<status status="PASS" starttime="20230324 15:40:33.519" endtime="20230324 15:40:33.590"/>
 </kw>
 <kw name="Select Topic" library="Top_New_Feed_Mobile_Keywords">
 <arg>${VarMessageMultipleCase14#1}</arg>
 <kw name="Sleep" library="BuiltIn">
 <arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230324 13:55:24.220" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20230324 13:55:19.220" endtime="20230324 13:55:24.220"/>
+<msg timestamp="20230324 15:40:38.592" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230324 15:40:33.591" endtime="20230324 15:40:38.592"/>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <arg>//android.widget.TextView[@resource-id="com.tisconet.ftc.sit:id/tvHeader"][contains(@text,"${Topic}")]</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20230324 13:55:24.223" level="INFO">Clicking element '//android.widget.TextView[@resource-id="com.tisconet.ftc.sit:id/tvHeader"][contains(@text,"Automate mutiple notification Buy#1")]'.</msg>
-<msg timestamp="20230324 13:55:24.314" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="com.tisconet.ftc.sit:id/tvHeader"][contains(@text,"Automate mutiple notification Buy#1")]</msg>
-<status status="PASS" starttime="20230324 13:55:24.220" endtime="20230324 13:55:24.314"/>
+<msg timestamp="20230324 15:40:38.595" level="INFO">Clicking element '//android.widget.TextView[@resource-id="com.tisconet.ftc.sit:id/tvHeader"][contains(@text,"Automate schedule contact us mutiple notification #1")]'.</msg>
+<msg timestamp="20230324 15:40:38.675" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="com.tisconet.ftc.sit:id/tvHeader"][contains(@text,"Automate schedule contact us mutiple notification #1")]</msg>
+<status status="PASS" starttime="20230324 15:40:38.592" endtime="20230324 15:40:38.675"/>
 </kw>
-<status status="PASS" starttime="20230324 13:55:19.220" endtime="20230324 13:55:24.314"/>
+<status status="PASS" starttime="20230324 15:40:33.591" endtime="20230324 15:40:38.676"/>
 </kw>
 <kw name="Verify Message Detail In Inbox" library="Top_New_Feed_Mobile_Keywords">
 <arg>${VarMessageMultipleCase14#1}</arg>
@@ -168,22 +167,21 @@ If you want to invest on this fund please buy.")]</msg>
 <arg>${locatAndroidMessageTopicInboxIn}</arg>
 <arg>timeout=10s</arg>
 <doc>Waits until element specified with `locator` appears on current page.</doc>
-<msg timestamp="20230324 13:55:24.965" level="INFO">xpath criteria: //android.widget.ScrollView/android.widget.LinearLayout/android.widget.TextView[1]
-xpath criteria: //android.widget.ScrollView/android.widget.LinearLayout/android.widget.TextView[1]</msg>
-<status status="PASS" starttime="20230324 13:55:24.315" endtime="20230324 13:55:24.965"/>
+<msg timestamp="20230324 15:40:38.748" level="INFO">xpath criteria: //android.widget.ScrollView/android.widget.LinearLayout/android.widget.TextView[1]</msg>
+<status status="PASS" starttime="20230324 15:40:38.676" endtime="20230324 15:40:38.748"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>4s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230324 13:55:28.965" level="INFO">Slept 4 seconds</msg>
-<status status="PASS" starttime="20230324 13:55:24.965" endtime="20230324 13:55:28.965"/>
+<msg timestamp="20230324 15:40:42.748" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20230324 15:40:38.748" endtime="20230324 15:40:42.748"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="AppiumLibrary">
 <arg>//android.widget.LinearLayout/android.widget.TextView[1][contains(@text,"${TopicValue}")]</arg>
 <arg>timeout=10s</arg>
 <doc>Waits until element specified with `locator` appears on current page.</doc>
-<msg timestamp="20230324 13:55:28.987" level="INFO">xpath criteria: //android.widget.LinearLayout/android.widget.TextView[1][contains(@text,"Automate mutiple notification Buy#1")]</msg>
-<status status="PASS" starttime="20230324 13:55:28.965" endtime="20230324 13:55:28.987"/>
+<msg timestamp="20230324 15:40:42.768" level="INFO">xpath criteria: //android.widget.LinearLayout/android.widget.TextView[1][contains(@text,"Automate schedule contact us mutiple notification #1")]</msg>
+<status status="PASS" starttime="20230324 15:40:42.748" endtime="20230324 15:40:42.769"/>
 </kw>
 <kw name="Text Shoud Be Equal" library="Top_New_Feed_Mobile_Keywords">
 <arg>${locatAndroidMessageDetailInboxIn}</arg>
@@ -192,24 +190,20 @@ xpath criteria: //android.widget.ScrollView/android.widget.LinearLayout/android.
 <var>${ActualValue}</var>
 <arg>${Locator}</arg>
 <doc>Get element text (for hybrid and mobile browser use `xpath` locator, others might cause problem)</doc>
-<msg timestamp="20230324 13:55:29.017" level="INFO">Element '//android.widget.ScrollView/android.widget.TextView' text is 'Dear value customer,
-Fund TINC-A meet target top earning 10% in 3 month.
-If you want to invest on this fund please buy.' </msg>
-<msg timestamp="20230324 13:55:29.017" level="INFO">xpath criteria: //android.widget.ScrollView/android.widget.TextView</msg>
-<msg timestamp="20230324 13:55:29.017" level="INFO">${ActualValue} = Dear value customer,
-Fund TINC-A meet target top earning 10% in 3 month.
-If you want to invest on this fund please buy.</msg>
-<status status="PASS" starttime="20230324 13:55:28.987" endtime="20230324 13:55:29.017"/>
+<msg timestamp="20230324 15:40:42.800" level="INFO">Element '//android.widget.ScrollView/android.widget.TextView' text is 'Sample Detail for schedule contact us notification topic 1' </msg>
+<msg timestamp="20230324 15:40:42.800" level="INFO">xpath criteria: //android.widget.ScrollView/android.widget.TextView</msg>
+<msg timestamp="20230324 15:40:42.800" level="INFO">${ActualValue} = Sample Detail for schedule contact us notification topic 1</msg>
+<status status="PASS" starttime="20230324 15:40:42.769" endtime="20230324 15:40:42.800"/>
 </kw>
 <kw name="Should Be Equal" library="BuiltIn">
 <arg>${ActualValue}</arg>
 <arg>${ExpectValue}</arg>
 <doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" starttime="20230324 13:55:29.017" endtime="20230324 13:55:29.017"/>
+<status status="PASS" starttime="20230324 15:40:42.800" endtime="20230324 15:40:42.800"/>
 </kw>
-<status status="PASS" starttime="20230324 13:55:28.987" endtime="20230324 13:55:29.017"/>
+<status status="PASS" starttime="20230324 15:40:42.769" endtime="20230324 15:40:42.800"/>
 </kw>
-<status status="PASS" starttime="20230324 13:55:24.315" endtime="20230324 13:55:29.017"/>
+<status status="PASS" starttime="20230324 15:40:38.676" endtime="20230324 15:40:42.801"/>
 </kw>
 <kw name="Verify Date Time In Message as Schedule" library="Top_New_Feed_Mobile_Keywords">
 <arg>${varTimeCase14}</arg>
@@ -218,21 +212,21 @@ If you want to invest on this fund please buy.</msg>
 <kw name="Get Time" library="BuiltIn">
 <var>${today}</var>
 <doc>Returns the given time in the requested format.</doc>
-<msg timestamp="20230324 13:55:29.018" level="INFO">${today} = 2023-03-24 13:55:29</msg>
-<status status="PASS" starttime="20230324 13:55:29.018" endtime="20230324 13:55:29.018"/>
+<msg timestamp="20230324 15:40:42.801" level="INFO">${today} = 2023-03-24 15:40:42</msg>
+<status status="PASS" starttime="20230324 15:40:42.801" endtime="20230324 15:40:42.801"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>todaytodaytoday${today}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20230324 13:55:29.018" endtime="20230324 13:55:29.018"/>
+<status status="PASS" starttime="20230324 15:40:42.801" endtime="20230324 15:40:42.802"/>
 </kw>
 <kw name="Convert Date" library="DateTime">
 <var>${today_formated}</var>
 <arg>${today}</arg>
 <arg>result_format=%d</arg>
 <doc>Converts between supported `date formats`.</doc>
-<msg timestamp="20230324 13:55:29.021" level="INFO">${today_formated} = 24</msg>
-<status status="PASS" starttime="20230324 13:55:29.018" endtime="20230324 13:55:29.021"/>
+<msg timestamp="20230324 15:40:42.805" level="INFO">${today_formated} = 24</msg>
+<status status="PASS" starttime="20230324 15:40:42.802" endtime="20230324 15:40:42.805"/>
 </kw>
 <kw name="Replace String Using Regexp" library="String">
 <var>${today_no_padding}</var>
@@ -240,16 +234,16 @@ If you want to invest on this fund please buy.</msg>
 <arg>^0</arg>
 <arg>${EMPTY}</arg>
 <doc>Replaces ``pattern`` in the given ``string`` with ``replace_with``.</doc>
-<msg timestamp="20230324 13:55:29.022" level="INFO">${today_no_padding} = 24</msg>
-<status status="PASS" starttime="20230324 13:55:29.021" endtime="20230324 13:55:29.022"/>
+<msg timestamp="20230324 15:40:42.806" level="INFO">${today_no_padding} = 24</msg>
+<status status="PASS" starttime="20230324 15:40:42.805" endtime="20230324 15:40:42.806"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>today${today_no_padding}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20230324 13:55:29.022" endtime="20230324 13:55:29.022"/>
+<status status="PASS" starttime="20230324 15:40:42.806" endtime="20230324 15:40:42.807"/>
 </kw>
-<msg timestamp="20230324 13:55:29.022" level="INFO">${day} = 24</msg>
-<status status="PASS" starttime="20230324 13:55:29.018" endtime="20230324 13:55:29.022"/>
+<msg timestamp="20230324 15:40:42.807" level="INFO">${day} = 24</msg>
+<status status="PASS" starttime="20230324 15:40:42.801" endtime="20230324 15:40:42.807"/>
 </kw>
 <kw name="Get Current Month Mobile" library="Top_New_Feed_Mobile_Keywords">
 <var>${month}</var>
@@ -257,13 +251,13 @@ If you want to invest on this fund please buy.</msg>
 <var>${currentMonth}</var>
 <arg>result_format=%m</arg>
 <doc>Returns current local or UTC time with an optional increment.</doc>
-<msg timestamp="20230324 13:55:29.022" level="INFO">${currentMonth} = 03</msg>
-<status status="PASS" starttime="20230324 13:55:29.022" endtime="20230324 13:55:29.022"/>
+<msg timestamp="20230324 15:40:42.807" level="INFO">${currentMonth} = 03</msg>
+<status status="PASS" starttime="20230324 15:40:42.807" endtime="20230324 15:40:42.807"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>currentMonth${currentMonth}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20230324 13:55:29.022" endtime="20230324 13:55:29.022"/>
+<status status="PASS" starttime="20230324 15:40:42.807" endtime="20230324 15:40:42.808"/>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <var>${MONTH}</var>
@@ -318,13 +312,13 @@ If you want to invest on this fund please buy.</msg>
 <kw name="Set Variable" library="BuiltIn">
 <arg>มี.ค.</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" starttime="20230324 13:55:29.023" endtime="20230324 13:55:29.023"/>
+<status status="PASS" starttime="20230324 15:40:42.808" endtime="20230324 15:40:42.808"/>
 </kw>
-<msg timestamp="20230324 13:55:29.023" level="INFO">${MONTH} = มี.ค.</msg>
-<status status="PASS" starttime="20230324 13:55:29.022" endtime="20230324 13:55:29.023"/>
+<msg timestamp="20230324 15:40:42.808" level="INFO">${MONTH} = มี.ค.</msg>
+<status status="PASS" starttime="20230324 15:40:42.808" endtime="20230324 15:40:42.808"/>
 </kw>
-<msg timestamp="20230324 13:55:29.023" level="INFO">${month} = มี.ค.</msg>
-<status status="PASS" starttime="20230324 13:55:29.022" endtime="20230324 13:55:29.023"/>
+<msg timestamp="20230324 15:40:42.809" level="INFO">${month} = มี.ค.</msg>
+<status status="PASS" starttime="20230324 15:40:42.807" endtime="20230324 15:40:42.809"/>
 </kw>
 <kw name="Get Current Year My Fund" library="Top_New_Feed_Mobile_Keywords">
 <var>${year}</var>
@@ -332,32 +326,32 @@ If you want to invest on this fund please buy.</msg>
 <var>${year}</var>
 <arg>result_format=%Y</arg>
 <doc>Returns current local or UTC time with an optional increment.</doc>
-<msg timestamp="20230324 13:55:29.025" level="INFO">${year} = 2023</msg>
-<status status="PASS" starttime="20230324 13:55:29.023" endtime="20230324 13:55:29.025"/>
+<msg timestamp="20230324 15:40:42.809" level="INFO">${year} = 2023</msg>
+<status status="PASS" starttime="20230324 15:40:42.809" endtime="20230324 15:40:42.809"/>
 </kw>
 <kw name="Evaluate" library="BuiltIn">
 <var>${yearBE}</var>
 <arg>${year}+543</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<msg timestamp="20230324 13:55:29.025" level="INFO">${yearBE} = 2566</msg>
-<status status="PASS" starttime="20230324 13:55:29.025" endtime="20230324 13:55:29.025"/>
+<msg timestamp="20230324 15:40:42.809" level="INFO">${yearBE} = 2566</msg>
+<status status="PASS" starttime="20230324 15:40:42.809" endtime="20230324 15:40:42.809"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>yearBE${yearBE}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20230324 13:55:29.025" endtime="20230324 13:55:29.025"/>
+<status status="PASS" starttime="20230324 15:40:42.809" endtime="20230324 15:40:42.810"/>
 </kw>
 <kw name="Convert To String" library="BuiltIn">
 <var>${convertstring}</var>
 <arg>${yearBE}</arg>
 <doc>Converts the given item to a Unicode string.</doc>
-<msg timestamp="20230324 13:55:29.025" level="INFO">${convertstring} = 2566</msg>
-<status status="PASS" starttime="20230324 13:55:29.025" endtime="20230324 13:55:29.025"/>
+<msg timestamp="20230324 15:40:42.810" level="INFO">${convertstring} = 2566</msg>
+<status status="PASS" starttime="20230324 15:40:42.810" endtime="20230324 15:40:42.810"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>convertstring${convertstring}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20230324 13:55:29.025" endtime="20230324 13:55:29.026"/>
+<status status="PASS" starttime="20230324 15:40:42.810" endtime="20230324 15:40:42.810"/>
 </kw>
 <kw name="Remove String" library="String">
 <var>${RemoveStringYearBE}</var>
@@ -366,43 +360,49 @@ If you want to invest on this fund please buy.</msg>
 <arg>26</arg>
 <arg>27</arg>
 <doc>Removes all ``removables`` from the given ``string``.</doc>
-<msg timestamp="20230324 13:55:29.026" level="INFO">${RemoveStringYearBE} = 66</msg>
-<status status="PASS" starttime="20230324 13:55:29.026" endtime="20230324 13:55:29.026"/>
+<msg timestamp="20230324 15:40:42.811" level="INFO">${RemoveStringYearBE} = 66</msg>
+<status status="PASS" starttime="20230324 15:40:42.810" endtime="20230324 15:40:42.811"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>RemoveStringYearBE${RemoveStringYearBE}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20230324 13:55:29.026" endtime="20230324 13:55:29.026"/>
+<status status="PASS" starttime="20230324 15:40:42.811" endtime="20230324 15:40:42.811"/>
 </kw>
-<msg timestamp="20230324 13:55:29.026" level="INFO">${year} = 66</msg>
-<status status="PASS" starttime="20230324 13:55:29.023" endtime="20230324 13:55:29.026"/>
+<msg timestamp="20230324 15:40:42.811" level="INFO">${year} = 66</msg>
+<status status="PASS" starttime="20230324 15:40:42.809" endtime="20230324 15:40:42.811"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="AppiumLibrary">
 <arg>//android.widget.ScrollView/android.widget.LinearLayout/android.widget.TextView[2][contains(@text,"${day} ${month} ${year} เวลา ${Time} น.")]</arg>
 <doc>Waits until element specified with `locator` appears on current page.</doc>
-<msg timestamp="20230324 13:55:29.050" level="INFO">xpath criteria: //android.widget.ScrollView/android.widget.LinearLayout/android.widget.TextView[2][contains(@text,"24 มี.ค. 66 เวลา 13:35 น.")]</msg>
-<status status="PASS" starttime="20230324 13:55:29.026" endtime="20230324 13:55:29.050"/>
+<msg timestamp="20230324 15:40:42.835" level="INFO">xpath criteria: //android.widget.ScrollView/android.widget.LinearLayout/android.widget.TextView[2][contains(@text,"24 มี.ค. 66 เวลา 14:07 น.")]</msg>
+<status status="PASS" starttime="20230324 15:40:42.811" endtime="20230324 15:40:42.835"/>
 </kw>
-<status status="PASS" starttime="20230324 13:55:29.017" endtime="20230324 13:55:29.050"/>
+<status status="PASS" starttime="20230324 15:40:42.801" endtime="20230324 15:40:42.835"/>
 </kw>
-<kw name="Verify Button Interested in Invest" library="Top_New_Feed_Mobile_Keywords">
+<kw name="Verify Button Contact Us" library="Top_New_Feed_Mobile_Keywords">
 <kw name="Wait Until Page Contains Element" library="AppiumLibrary">
-<arg>//android.widget.Button[contains(@text,"สนใจลงทุน")]</arg>
+<arg>${locatButtonContactUs}</arg>
 <doc>Waits until element specified with `locator` appears on current page.</doc>
-<msg timestamp="20230324 13:55:29.075" level="INFO">xpath criteria: //android.widget.Button[contains(@text,"สนใจลงทุน")]</msg>
-<status status="PASS" starttime="20230324 13:55:29.051" endtime="20230324 13:55:29.075"/>
+<msg timestamp="20230324 15:40:42.861" level="INFO">xpath criteria: //android.widget.Button[contains(@text,"ติดต่อเจ้าหน้าที่")]</msg>
+<status status="PASS" starttime="20230324 15:40:42.836" endtime="20230324 15:40:42.861"/>
 </kw>
-<status status="PASS" starttime="20230324 13:55:29.051" endtime="20230324 13:55:29.075"/>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<arg>VerifyButtonContactUs.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20230324 15:40:43.243" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="VerifyButtonContactUs.png"&gt;&lt;img src="VerifyButtonContactUs.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230324 15:40:42.861" endtime="20230324 15:40:43.243"/>
+</kw>
+<status status="PASS" starttime="20230324 15:40:42.835" endtime="20230324 15:40:43.243"/>
 </kw>
 <kw name="Press Button Back" library="Top_New_Feed_Mobile_Keywords">
 <kw name="Click Element" library="AppiumLibrary">
 <arg>${locatAndroidButtonBackInbox}</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20230324 13:55:29.078" level="INFO">Clicking element '//android.widget.TextView[contains(@text,"กลับ")]'.</msg>
-<msg timestamp="20230324 13:55:29.857" level="INFO">xpath criteria: //android.widget.TextView[contains(@text,"กลับ")]</msg>
-<status status="PASS" starttime="20230324 13:55:29.075" endtime="20230324 13:55:29.857"/>
+<msg timestamp="20230324 15:40:43.247" level="INFO">Clicking element '//android.widget.TextView[contains(@text,"กลับ")]'.</msg>
+<msg timestamp="20230324 15:40:44.041" level="INFO">xpath criteria: //android.widget.TextView[contains(@text,"กลับ")]</msg>
+<status status="PASS" starttime="20230324 15:40:43.244" endtime="20230324 15:40:44.042"/>
 </kw>
-<status status="PASS" starttime="20230324 13:55:29.075" endtime="20230324 13:55:29.857"/>
+<status status="PASS" starttime="20230324 15:40:43.243" endtime="20230324 15:40:44.042"/>
 </kw>
 <kw name="Verify Message Inbox" library="Top_New_Feed_Mobile_Keywords">
 <arg>${VarMessageMultipleCase14#2}</arg>
@@ -411,30 +411,28 @@ If you want to invest on this fund please buy.</msg>
 <arg>${locatAndroidMessageTopicInbox}</arg>
 <arg>timeout=10s</arg>
 <doc>Waits until element specified with `locator` appears on current page.</doc>
-<msg timestamp="20230324 13:55:29.903" level="INFO">xpath criteria: //android.view.ViewGroup[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.TextView</msg>
-<status status="PASS" starttime="20230324 13:55:29.858" endtime="20230324 13:55:29.903"/>
+<msg timestamp="20230324 15:40:44.085" level="INFO">xpath criteria: //android.view.ViewGroup[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.TextView</msg>
+<status status="PASS" starttime="20230324 15:40:44.042" endtime="20230324 15:40:44.085"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>4s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230324 13:55:33.905" level="INFO">Slept 4 seconds</msg>
-<status status="PASS" starttime="20230324 13:55:29.904" endtime="20230324 13:55:33.905"/>
+<msg timestamp="20230324 15:40:48.087" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20230324 15:40:44.085" endtime="20230324 15:40:48.087"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="AppiumLibrary">
 <arg>//android.widget.LinearLayout/android.widget.LinearLayout/android.widget.TextView[contains(@text,"${TopicValue}")]</arg>
 <doc>Waits until element specified with `locator` appears on current page.</doc>
-<msg timestamp="20230324 13:55:33.949" level="INFO">xpath criteria: //android.widget.LinearLayout/android.widget.LinearLayout/android.widget.TextView[contains(@text,"Automate mutiple notification Buy#2")]</msg>
-<status status="PASS" starttime="20230324 13:55:33.905" endtime="20230324 13:55:33.949"/>
+<msg timestamp="20230324 15:40:48.136" level="INFO">xpath criteria: //android.widget.LinearLayout/android.widget.LinearLayout/android.widget.TextView[contains(@text,"Automate schedule contact us mutiple notification #2")]</msg>
+<status status="PASS" starttime="20230324 15:40:48.087" endtime="20230324 15:40:48.136"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="AppiumLibrary">
 <arg>//android.widget.LinearLayout/android.widget.LinearLayout/android.widget.TextView[1][contains(@text,"${DetailValue}")]</arg>
 <doc>Waits until element specified with `locator` appears on current page.</doc>
-<msg timestamp="20230324 13:55:33.999" level="INFO">xpath criteria: //android.widget.LinearLayout/android.widget.LinearLayout/android.widget.TextView[1][contains(@text,"Dear value customer,
-Fund TINC-A win fund award from SET.
-If you want to invest on this fund please buy.")]</msg>
-<status status="PASS" starttime="20230324 13:55:33.949" endtime="20230324 13:55:33.999"/>
+<msg timestamp="20230324 15:40:48.182" level="INFO">xpath criteria: //android.widget.LinearLayout/android.widget.LinearLayout/android.widget.TextView[1][contains(@text,"Sample Detail for schedule contact us notification topic 2")]</msg>
+<status status="PASS" starttime="20230324 15:40:48.136" endtime="20230324 15:40:48.182"/>
 </kw>
-<status status="PASS" starttime="20230324 13:55:29.858" endtime="20230324 13:55:33.999"/>
+<status status="PASS" starttime="20230324 15:40:44.042" endtime="20230324 15:40:48.182"/>
 </kw>
 <kw name="Verify Time on Inbox" library="Top_New_Feed_Mobile_Keywords">
 <arg>${varTimeCase14}</arg>
@@ -442,27 +440,27 @@ If you want to invest on this fund please buy.")]</msg>
 <arg>//android.widget.RelativeLayout//*[contains(@text,"${ExpectValue}")]</arg>
 <arg>timeout=20s</arg>
 <doc>Waits until element specified with `locator` appears on current page.</doc>
-<msg timestamp="20230324 13:55:34.053" level="INFO">xpath criteria: //android.widget.RelativeLayout//*[contains(@text,"13:35")]</msg>
-<status status="PASS" starttime="20230324 13:55:34.000" endtime="20230324 13:55:34.053"/>
+<msg timestamp="20230324 15:40:48.237" level="INFO">xpath criteria: //android.widget.RelativeLayout//*[contains(@text,"14:07")]</msg>
+<status status="PASS" starttime="20230324 15:40:48.183" endtime="20230324 15:40:48.237"/>
 </kw>
-<status status="PASS" starttime="20230324 13:55:34.000" endtime="20230324 13:55:34.053"/>
+<status status="PASS" starttime="20230324 15:40:48.182" endtime="20230324 15:40:48.237"/>
 </kw>
 <kw name="Select Topic" library="Top_New_Feed_Mobile_Keywords">
 <arg>${VarMessageMultipleCase14#2}</arg>
 <kw name="Sleep" library="BuiltIn">
 <arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230324 13:55:39.055" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20230324 13:55:34.054" endtime="20230324 13:55:39.055"/>
+<msg timestamp="20230324 15:40:53.239" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230324 15:40:48.238" endtime="20230324 15:40:53.239"/>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <arg>//android.widget.TextView[@resource-id="com.tisconet.ftc.sit:id/tvHeader"][contains(@text,"${Topic}")]</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20230324 13:55:39.058" level="INFO">Clicking element '//android.widget.TextView[@resource-id="com.tisconet.ftc.sit:id/tvHeader"][contains(@text,"Automate mutiple notification Buy#2")]'.</msg>
-<msg timestamp="20230324 13:55:39.147" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="com.tisconet.ftc.sit:id/tvHeader"][contains(@text,"Automate mutiple notification Buy#2")]</msg>
-<status status="PASS" starttime="20230324 13:55:39.055" endtime="20230324 13:55:39.148"/>
+<msg timestamp="20230324 15:40:53.242" level="INFO">Clicking element '//android.widget.TextView[@resource-id="com.tisconet.ftc.sit:id/tvHeader"][contains(@text,"Automate schedule contact us mutiple notification #2")]'.</msg>
+<msg timestamp="20230324 15:40:53.340" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="com.tisconet.ftc.sit:id/tvHeader"][contains(@text,"Automate schedule contact us mutiple notification #2")]</msg>
+<status status="PASS" starttime="20230324 15:40:53.239" endtime="20230324 15:40:53.340"/>
 </kw>
-<status status="PASS" starttime="20230324 13:55:34.053" endtime="20230324 13:55:39.148"/>
+<status status="PASS" starttime="20230324 15:40:48.238" endtime="20230324 15:40:53.340"/>
 </kw>
 <kw name="Verify Message Detail In Inbox" library="Top_New_Feed_Mobile_Keywords">
 <arg>${VarMessageMultipleCase14#2}</arg>
@@ -471,21 +469,21 @@ If you want to invest on this fund please buy.")]</msg>
 <arg>${locatAndroidMessageTopicInboxIn}</arg>
 <arg>timeout=10s</arg>
 <doc>Waits until element specified with `locator` appears on current page.</doc>
-<msg timestamp="20230324 13:55:39.289" level="INFO">xpath criteria: //android.widget.ScrollView/android.widget.LinearLayout/android.widget.TextView[1]</msg>
-<status status="PASS" starttime="20230324 13:55:39.148" endtime="20230324 13:55:39.289"/>
+<msg timestamp="20230324 15:40:53.448" level="INFO">xpath criteria: //android.widget.ScrollView/android.widget.LinearLayout/android.widget.TextView[1]</msg>
+<status status="PASS" starttime="20230324 15:40:53.341" endtime="20230324 15:40:53.449"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>4s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230324 13:55:43.290" level="INFO">Slept 4 seconds</msg>
-<status status="PASS" starttime="20230324 13:55:39.289" endtime="20230324 13:55:43.290"/>
+<msg timestamp="20230324 15:40:57.450" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20230324 15:40:53.449" endtime="20230324 15:40:57.450"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="AppiumLibrary">
 <arg>//android.widget.LinearLayout/android.widget.TextView[1][contains(@text,"${TopicValue}")]</arg>
 <arg>timeout=10s</arg>
 <doc>Waits until element specified with `locator` appears on current page.</doc>
-<msg timestamp="20230324 13:55:43.310" level="INFO">xpath criteria: //android.widget.LinearLayout/android.widget.TextView[1][contains(@text,"Automate mutiple notification Buy#2")]</msg>
-<status status="PASS" starttime="20230324 13:55:43.290" endtime="20230324 13:55:43.310"/>
+<msg timestamp="20230324 15:40:57.469" level="INFO">xpath criteria: //android.widget.LinearLayout/android.widget.TextView[1][contains(@text,"Automate schedule contact us mutiple notification #2")]</msg>
+<status status="PASS" starttime="20230324 15:40:57.450" endtime="20230324 15:40:57.469"/>
 </kw>
 <kw name="Text Shoud Be Equal" library="Top_New_Feed_Mobile_Keywords">
 <arg>${locatAndroidMessageDetailInboxIn}</arg>
@@ -494,43 +492,45 @@ If you want to invest on this fund please buy.")]</msg>
 <var>${ActualValue}</var>
 <arg>${Locator}</arg>
 <doc>Get element text (for hybrid and mobile browser use `xpath` locator, others might cause problem)</doc>
-<msg timestamp="20230324 13:55:43.338" level="INFO">Element '//android.widget.ScrollView/android.widget.TextView' text is 'Dear value customer,
-Fund TINC-A win fund award from SET.
-If you want to invest on this fund please buy.' </msg>
-<msg timestamp="20230324 13:55:43.338" level="INFO">xpath criteria: //android.widget.ScrollView/android.widget.TextView</msg>
-<msg timestamp="20230324 13:55:43.338" level="INFO">${ActualValue} = Dear value customer,
-Fund TINC-A win fund award from SET.
-If you want to invest on this fund please buy.</msg>
-<status status="PASS" starttime="20230324 13:55:43.310" endtime="20230324 13:55:43.338"/>
+<msg timestamp="20230324 15:40:57.497" level="INFO">Element '//android.widget.ScrollView/android.widget.TextView' text is 'Sample Detail for schedule contact us notification topic 2' </msg>
+<msg timestamp="20230324 15:40:57.498" level="INFO">xpath criteria: //android.widget.ScrollView/android.widget.TextView</msg>
+<msg timestamp="20230324 15:40:57.498" level="INFO">${ActualValue} = Sample Detail for schedule contact us notification topic 2</msg>
+<status status="PASS" starttime="20230324 15:40:57.469" endtime="20230324 15:40:57.498"/>
 </kw>
 <kw name="Should Be Equal" library="BuiltIn">
 <arg>${ActualValue}</arg>
 <arg>${ExpectValue}</arg>
 <doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" starttime="20230324 13:55:43.338" endtime="20230324 13:55:43.338"/>
+<status status="PASS" starttime="20230324 15:40:57.498" endtime="20230324 15:40:57.498"/>
 </kw>
-<status status="PASS" starttime="20230324 13:55:43.310" endtime="20230324 13:55:43.338"/>
+<status status="PASS" starttime="20230324 15:40:57.469" endtime="20230324 15:40:57.498"/>
 </kw>
-<status status="PASS" starttime="20230324 13:55:39.148" endtime="20230324 13:55:43.338"/>
+<status status="PASS" starttime="20230324 15:40:53.341" endtime="20230324 15:40:57.498"/>
 </kw>
-<kw name="Verify Button Interested in Invest" library="Top_New_Feed_Mobile_Keywords">
+<kw name="Verify Button Contact Us" library="Top_New_Feed_Mobile_Keywords">
 <kw name="Wait Until Page Contains Element" library="AppiumLibrary">
-<arg>//android.widget.Button[contains(@text,"สนใจลงทุน")]</arg>
+<arg>${locatButtonContactUs}</arg>
 <doc>Waits until element specified with `locator` appears on current page.</doc>
-<msg timestamp="20230324 13:55:43.359" level="INFO">xpath criteria: //android.widget.Button[contains(@text,"สนใจลงทุน")]</msg>
-<status status="PASS" starttime="20230324 13:55:43.339" endtime="20230324 13:55:43.359"/>
+<msg timestamp="20230324 15:40:57.521" level="INFO">xpath criteria: //android.widget.Button[contains(@text,"ติดต่อเจ้าหน้าที่")]</msg>
+<status status="PASS" starttime="20230324 15:40:57.498" endtime="20230324 15:40:57.521"/>
 </kw>
-<status status="PASS" starttime="20230324 13:55:43.339" endtime="20230324 13:55:43.359"/>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<arg>VerifyButtonContactUs.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20230324 15:40:57.880" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="VerifyButtonContactUs.png"&gt;&lt;img src="VerifyButtonContactUs.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230324 15:40:57.521" endtime="20230324 15:40:57.880"/>
 </kw>
-<kw name="Click Button Interested in Invest" library="Top_New_Feed_Mobile_Keywords">
+<status status="PASS" starttime="20230324 15:40:57.498" endtime="20230324 15:40:57.880"/>
+</kw>
+<kw name="Click Button Contact Us" library="Top_New_Feed_Mobile_Keywords">
 <kw name="Click Element" library="AppiumLibrary">
-<arg>//android.widget.Button[contains(@text,"สนใจลงทุน")]</arg>
+<arg>${locatButtonContactUs}</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20230324 13:55:43.363" level="INFO">Clicking element '//android.widget.Button[contains(@text,"สนใจลงทุน")]'.</msg>
-<msg timestamp="20230324 13:55:43.414" level="INFO">xpath criteria: //android.widget.Button[contains(@text,"สนใจลงทุน")]</msg>
-<status status="PASS" starttime="20230324 13:55:43.359" endtime="20230324 13:55:43.414"/>
+<msg timestamp="20230324 15:40:57.884" level="INFO">Clicking element '//android.widget.Button[contains(@text,"ติดต่อเจ้าหน้าที่")]'.</msg>
+<msg timestamp="20230324 15:40:57.979" level="INFO">xpath criteria: //android.widget.Button[contains(@text,"ติดต่อเจ้าหน้าที่")]</msg>
+<status status="PASS" starttime="20230324 15:40:57.881" endtime="20230324 15:40:57.979"/>
 </kw>
-<status status="PASS" starttime="20230324 13:55:43.359" endtime="20230324 13:55:43.415"/>
+<status status="PASS" starttime="20230324 15:40:57.881" endtime="20230324 15:40:57.979"/>
 </kw>
 <kw name="Click Pin" library="Top_New_Feed_Mobile_Keywords">
 <arg>1</arg>
@@ -542,187 +542,206 @@ If you want to invest on this fund please buy.</msg>
 <kw name="Sleep" library="BuiltIn">
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230324 13:55:46.417" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20230324 13:55:43.416" endtime="20230324 13:55:46.417"/>
+<msg timestamp="20230324 15:41:00.980" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230324 15:40:57.979" endtime="20230324 15:41:00.980"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="AppiumLibrary">
 <arg>${locatLabelPleaseInputPIN}</arg>
 <doc>Waits until element specified with `locator` appears on current page.</doc>
-<msg timestamp="20230324 13:55:46.446" level="INFO">xpath criteria: //android.widget.LinearLayout[1]/android.widget.TextView[contains(@text,"กรุณากด PIN เพื่อเข้าสู่ระบบ")]</msg>
-<status status="PASS" starttime="20230324 13:55:46.417" endtime="20230324 13:55:46.447"/>
+<msg timestamp="20230324 15:41:01.007" level="INFO">xpath criteria: //android.widget.LinearLayout[1]/android.widget.TextView[contains(@text,"กรุณากด PIN เพื่อเข้าสู่ระบบ")]</msg>
+<status status="PASS" starttime="20230324 15:41:00.980" endtime="20230324 15:41:01.007"/>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <arg>//*[@resource-id="com.tisconet.ftc.sit:id/btn_pin${Nummber1}"]</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20230324 13:55:46.451" level="INFO">Clicking element '//*[@resource-id="com.tisconet.ftc.sit:id/btn_pin1"]'.</msg>
-<msg timestamp="20230324 13:55:46.514" level="INFO">xpath criteria: //*[@resource-id="com.tisconet.ftc.sit:id/btn_pin1"]</msg>
-<status status="PASS" starttime="20230324 13:55:46.447" endtime="20230324 13:55:46.514"/>
+<msg timestamp="20230324 15:41:01.010" level="INFO">Clicking element '//*[@resource-id="com.tisconet.ftc.sit:id/btn_pin1"]'.</msg>
+<msg timestamp="20230324 15:41:01.074" level="INFO">xpath criteria: //*[@resource-id="com.tisconet.ftc.sit:id/btn_pin1"]</msg>
+<status status="PASS" starttime="20230324 15:41:01.007" endtime="20230324 15:41:01.074"/>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <arg>//*[@resource-id="com.tisconet.ftc.sit:id/btn_pin${Nummber2}"]</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20230324 13:55:46.518" level="INFO">Clicking element '//*[@resource-id="com.tisconet.ftc.sit:id/btn_pin1"]'.</msg>
-<msg timestamp="20230324 13:55:47.049" level="INFO">xpath criteria: //*[@resource-id="com.tisconet.ftc.sit:id/btn_pin1"]</msg>
-<status status="PASS" starttime="20230324 13:55:46.514" endtime="20230324 13:55:47.049"/>
+<msg timestamp="20230324 15:41:01.078" level="INFO">Clicking element '//*[@resource-id="com.tisconet.ftc.sit:id/btn_pin1"]'.</msg>
+<msg timestamp="20230324 15:41:01.606" level="INFO">xpath criteria: //*[@resource-id="com.tisconet.ftc.sit:id/btn_pin1"]</msg>
+<status status="PASS" starttime="20230324 15:41:01.074" endtime="20230324 15:41:01.607"/>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <arg>//*[@resource-id="com.tisconet.ftc.sit:id/btn_pin${Nummber3}"]</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20230324 13:55:47.052" level="INFO">Clicking element '//*[@resource-id="com.tisconet.ftc.sit:id/btn_pin2"]'.</msg>
-<msg timestamp="20230324 13:55:47.581" level="INFO">xpath criteria: //*[@resource-id="com.tisconet.ftc.sit:id/btn_pin2"]</msg>
-<status status="PASS" starttime="20230324 13:55:47.049" endtime="20230324 13:55:47.581"/>
+<msg timestamp="20230324 15:41:01.610" level="INFO">Clicking element '//*[@resource-id="com.tisconet.ftc.sit:id/btn_pin2"]'.</msg>
+<msg timestamp="20230324 15:41:02.142" level="INFO">xpath criteria: //*[@resource-id="com.tisconet.ftc.sit:id/btn_pin2"]</msg>
+<status status="PASS" starttime="20230324 15:41:01.607" endtime="20230324 15:41:02.142"/>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <arg>//*[@resource-id="com.tisconet.ftc.sit:id/btn_pin${Nummber4}"]</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20230324 13:55:47.584" level="INFO">Clicking element '//*[@resource-id="com.tisconet.ftc.sit:id/btn_pin2"]'.</msg>
-<msg timestamp="20230324 13:55:48.116" level="INFO">xpath criteria: //*[@resource-id="com.tisconet.ftc.sit:id/btn_pin2"]</msg>
-<status status="PASS" starttime="20230324 13:55:47.581" endtime="20230324 13:55:48.116"/>
+<msg timestamp="20230324 15:41:02.146" level="INFO">Clicking element '//*[@resource-id="com.tisconet.ftc.sit:id/btn_pin2"]'.</msg>
+<msg timestamp="20230324 15:41:02.674" level="INFO">xpath criteria: //*[@resource-id="com.tisconet.ftc.sit:id/btn_pin2"]</msg>
+<status status="PASS" starttime="20230324 15:41:02.142" endtime="20230324 15:41:02.674"/>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <arg>//*[@resource-id="com.tisconet.ftc.sit:id/btn_pin${Nummber5}"]</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20230324 13:55:48.119" level="INFO">Clicking element '//*[@resource-id="com.tisconet.ftc.sit:id/btn_pin3"]'.</msg>
-<msg timestamp="20230324 13:55:48.648" level="INFO">xpath criteria: //*[@resource-id="com.tisconet.ftc.sit:id/btn_pin3"]</msg>
-<status status="PASS" starttime="20230324 13:55:48.116" endtime="20230324 13:55:48.648"/>
+<msg timestamp="20230324 15:41:02.676" level="INFO">Clicking element '//*[@resource-id="com.tisconet.ftc.sit:id/btn_pin3"]'.</msg>
+<msg timestamp="20230324 15:41:03.209" level="INFO">xpath criteria: //*[@resource-id="com.tisconet.ftc.sit:id/btn_pin3"]</msg>
+<status status="PASS" starttime="20230324 15:41:02.674" endtime="20230324 15:41:03.210"/>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <arg>//*[@resource-id="com.tisconet.ftc.sit:id/btn_pin${Nummber6}"]</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20230324 13:55:48.651" level="INFO">Clicking element '//*[@resource-id="com.tisconet.ftc.sit:id/btn_pin3"]'.</msg>
-<msg timestamp="20230324 13:55:49.182" level="INFO">xpath criteria: //*[@resource-id="com.tisconet.ftc.sit:id/btn_pin3"]</msg>
-<status status="PASS" starttime="20230324 13:55:48.648" endtime="20230324 13:55:49.182"/>
+<msg timestamp="20230324 15:41:03.213" level="INFO">Clicking element '//*[@resource-id="com.tisconet.ftc.sit:id/btn_pin3"]'.</msg>
+<msg timestamp="20230324 15:41:03.740" level="INFO">xpath criteria: //*[@resource-id="com.tisconet.ftc.sit:id/btn_pin3"]</msg>
+<status status="PASS" starttime="20230324 15:41:03.210" endtime="20230324 15:41:03.740"/>
 </kw>
 <kw name="Capture Page Screenshot" library="AppiumLibrary">
 <arg>ClickPin.png</arg>
 <doc>Takes a screenshot of the current page and embeds it into the log.</doc>
-<msg timestamp="20230324 13:55:49.657" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="ClickPin.png"&gt;&lt;img src="ClickPin.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20230324 13:55:49.182" endtime="20230324 13:55:49.657"/>
+<msg timestamp="20230324 15:41:04.165" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="ClickPin.png"&gt;&lt;img src="ClickPin.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230324 15:41:03.740" endtime="20230324 15:41:04.165"/>
 </kw>
-<status status="PASS" starttime="20230324 13:55:43.415" endtime="20230324 13:55:49.657"/>
+<status status="PASS" starttime="20230324 15:40:57.979" endtime="20230324 15:41:04.165"/>
 </kw>
 <kw name="Verify Mobile Loading Is Done" library="Top_New_Feed_Mobile_Keywords">
 <kw name="Wait Until Page Does Not Contain Element" library="AppiumLibrary">
 <arg>//*[contains(@text,"กรุณารอสักครู่")]</arg>
 <doc>Waits until element specified with `locator` disappears from current page.</doc>
-<msg timestamp="20230324 13:55:50.156" level="INFO">xpath criteria: //*[contains(@text,"กรุณารอสักครู่")]</msg>
-<status status="PASS" starttime="20230324 13:55:49.657" endtime="20230324 13:55:50.156"/>
+<msg timestamp="20230324 15:41:04.696" level="INFO">xpath criteria: //*[contains(@text,"กรุณารอสักครู่")]</msg>
+<status status="PASS" starttime="20230324 15:41:04.165" endtime="20230324 15:41:04.696"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230324 13:55:55.156" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20230324 13:55:50.156" endtime="20230324 13:55:55.156"/>
+<msg timestamp="20230324 15:41:09.697" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230324 15:41:04.696" endtime="20230324 15:41:09.697"/>
 </kw>
-<status status="PASS" starttime="20230324 13:55:49.657" endtime="20230324 13:55:55.156"/>
+<status status="PASS" starttime="20230324 15:41:04.165" endtime="20230324 15:41:09.697"/>
 </kw>
-<kw name="Verify Default Transaction Screen" library="Top_New_Feed_Mobile_Keywords">
-<arg>${varActive}</arg>
-<arg>${varNotActive}</arg>
-<arg>${varNotActive}</arg>
-<arg>${varFundCodeTINC-A}</arg>
-<arg>${varFundCodeTINC-A}</arg>
-<arg>${varFundNameTINC-A}</arg>
-<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
-<arg>//android.view.ViewGroup[@resource-id="com.tisconet.ftc.sit:id/toolbar"]//android.widget.TextView[contains(@text,"ทำรายการ")]</arg>
-<arg>timeout=10s</arg>
-<doc>Waits until element specified with `locator` appears on current page.</doc>
-<msg timestamp="20230324 13:56:03.882" level="INFO">xpath criteria: //android.view.ViewGroup[@resource-id="com.tisconet.ftc.sit:id/toolbar"]//android.widget.TextView[contains(@text,"ทำรายการ")]
-xpath criteria: //android.view.ViewGroup[@resource-id="com.tisconet.ftc.sit:id/toolbar"]//android.widget.TextView[contains(@text,"ทำรายการ")]
-xpath criteria: //android.view.ViewGroup[@resource-id="com.tisconet.ftc.sit:id/toolbar"]//android.widget.TextView[contains(@text,"ทำรายการ")]
-xpath criteria: //android.view.ViewGroup[@resource-id="com.tisconet.ftc.sit:id/toolbar"]//android.widget.TextView[contains(@text,"ทำรายการ")]
-xpath criteria: //android.view.ViewGroup[@resource-id="com.tisconet.ftc.sit:id/toolbar"]//android.widget.TextView[contains(@text,"ทำรายการ")]
-xpath criteria: //android.view.ViewGroup[@resource-id="com.tisconet.ftc.sit:id/toolbar"]//android.widget.TextView[contains(@text,"ทำรายการ")]
-xpath criteria: //android.view.ViewGroup[@resource-id="com.tisconet.ftc.sit:id/toolbar"]//android.widget.TextView[contains(@text,"ทำรายการ")]
-xpath criteria: //android.view.ViewGroup[@resource-id="com.tisconet.ftc.sit:id/toolbar"]//android.widget.TextView[contains(@text,"ทำรายการ")]
-xpath criteria: //android.view.ViewGroup[@resource-id="com.tisconet.ftc.sit:id/toolbar"]//android.widget.TextView[contains(@text,"ทำรายการ")]
-xpath criteria: //android.view.ViewGroup[@resource-id="com.tisconet.ftc.sit:id/toolbar"]//android.widget.TextView[contains(@text,"ทำรายการ")]
-xpath criteria: //android.view.ViewGroup[@resource-id="com.tisconet.ftc.sit:id/toolbar"]//android.widget.TextView[contains(@text,"ทำรายการ")]
-xpath criteria: //android.view.ViewGroup[@resource-id="com.tisconet.ftc.sit:id/toolbar"]//android.widget.TextView[contains(@text,"ทำรายการ")]
-xpath criteria: //android.view.ViewGroup[@resource-id="com.tisconet.ftc.sit:id/toolbar"]//android.widget.TextView[contains(@text,"ทำรายการ")]
-xpath criteria: //android.view.ViewGroup[@resource-id="com.tisconet.ftc.sit:id/toolbar"]//android.widget.TextView[contains(@text,"ทำรายการ")]
-xpath criteria: //android.view.ViewGroup[@resource-id="com.tisconet.ftc.sit:id/toolbar"]//android.widget.TextView[contains(@text,"ทำรายการ")]
-xpath criteria: //android.view.ViewGroup[@resource-id="com.tisconet.ftc.sit:id/toolbar"]//android.widget.TextView[contains(@text,"ทำรายการ")]
-xpath criteria: //android.view.ViewGroup[@resource-id="com.tisconet.ftc.sit:id/toolbar"]//android.widget.TextView[contains(@text,"ทำรายการ")]
-xpath criteria: //android.view.ViewGroup[@resource-id="com.tisconet.ftc.sit:id/toolbar"]//android.widget.TextView[contains(@text,"ทำรายการ")]
-xpath criteria: //android.view.ViewGroup[@resource-id="com.tisconet.ftc.sit:id/toolbar"]//android.widget.TextView[contains(@text,"ทำรายการ")]
-xpath criteria: //android.view.ViewGroup[@resource-id="com.tisconet.ftc.sit:id/toolbar"]//android.widget.TextView[contains(@text,"ทำรายการ")]
-xpath criteria: //android.view.ViewGroup[@resource-id="com.tisconet.ftc.sit:id/toolbar"]//android.widget.TextView[contains(@text,"ทำรายการ")]
-xpath criteria: //android.view.ViewGroup[@resource-id="com.tisconet.ftc.sit:id/toolbar"]//android.widget.TextView[contains(@text,"ทำรายการ")]
-xpath criteria: //android.view.ViewGroup[@resource-id="com.tisconet.ftc.sit:id/toolbar"]//android.widget.TextView[contains(@text,"ทำรายการ")]
-xpath criteria: //android.view.ViewGroup[@resource-id="com.tisconet.ftc.sit:id/toolbar"]//android.widget.TextView[contains(@text,"ทำรายการ")]</msg>
-<status status="PASS" starttime="20230324 13:55:55.156" endtime="20230324 13:56:03.882"/>
+<kw name="Verify Contact Us VDO CALL" library="Top_New_Feed_Mobile_Keywords">
+<arg>${varHeaderVDOCALL}</arg>
+<arg>${varAnnounceVDOCALL}</arg>
+<arg>${varVDOCALLDetail1}</arg>
+<arg>${varVDOCALLDetail2}</arg>
+<kw name="Sleep" library="BuiltIn">
+<arg>6s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230324 15:41:15.698" level="INFO">Slept 6 seconds</msg>
+<status status="PASS" starttime="20230324 15:41:09.698" endtime="20230324 15:41:15.698"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="AppiumLibrary">
-<arg>//android.view.ViewGroup[@resource-id="com.tisconet.ftc.sit:id/toolbar"]//android.widget.TextView[contains(@text,"สถานะ")]</arg>
-<arg>timeout=10s</arg>
+<arg>${locatHeaderVDOCALL}</arg>
 <doc>Waits until element specified with `locator` appears on current page.</doc>
-<msg timestamp="20230324 13:56:04.467" level="INFO">xpath criteria: //android.view.ViewGroup[@resource-id="com.tisconet.ftc.sit:id/toolbar"]//android.widget.TextView[contains(@text,"สถานะ")]</msg>
-<status status="PASS" starttime="20230324 13:56:03.883" endtime="20230324 13:56:04.467"/>
+<msg timestamp="20230324 15:41:15.906" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="com.tisconet.ftc.sit:id/tvTitle"][contains(@text,"ติดต่อเจ้าหน้าที่ผ่าน VDO CALL")]</msg>
+<status status="PASS" starttime="20230324 15:41:15.698" endtime="20230324 15:41:15.906"/>
 </kw>
+<kw name="Text Shoud Be Equal" library="Top_New_Feed_Mobile_Keywords">
+<arg>${locatHeaderVDOCALL}</arg>
+<arg>${headerTitle}</arg>
+<kw name="Get Text" library="AppiumLibrary">
+<var>${ActualValue}</var>
+<arg>${Locator}</arg>
+<doc>Get element text (for hybrid and mobile browser use `xpath` locator, others might cause problem)</doc>
+<msg timestamp="20230324 15:41:15.937" level="INFO">Element '//android.widget.TextView[@resource-id="com.tisconet.ftc.sit:id/tvTitle"][contains(@text,"ติดต่อเจ้าหน้าที่ผ่าน VDO CALL")]' text is 'ติดต่อเจ้าหน้าที่ผ่าน VDO CALL' </msg>
+<msg timestamp="20230324 15:41:15.937" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="com.tisconet.ftc.sit:id/tvTitle"][contains(@text,"ติดต่อเจ้าหน้าที่ผ่าน VDO CALL")]</msg>
+<msg timestamp="20230324 15:41:15.937" level="INFO">${ActualValue} = ติดต่อเจ้าหน้าที่ผ่าน VDO CALL</msg>
+<status status="PASS" starttime="20230324 15:41:15.906" endtime="20230324 15:41:15.937"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${ActualValue}</arg>
+<arg>${ExpectValue}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20230324 15:41:15.937" endtime="20230324 15:41:15.938"/>
+</kw>
+<status status="PASS" starttime="20230324 15:41:15.906" endtime="20230324 15:41:15.938"/>
+</kw>
+<kw name="Text Shoud Be Equal" library="Top_New_Feed_Mobile_Keywords">
+<arg>${locatAnnounceVDOCALL}</arg>
+<arg>${Announce}</arg>
+<kw name="Get Text" library="AppiumLibrary">
+<var>${ActualValue}</var>
+<arg>${Locator}</arg>
+<doc>Get element text (for hybrid and mobile browser use `xpath` locator, others might cause problem)</doc>
+<msg timestamp="20230324 15:41:15.970" level="INFO">Element 'xpath= (//android.widget.FrameLayout[@resource-id="com.tisconet.ftc.sit:id/content"]//android.widget.TextView)[1]' text is 'กรุณาเตรียมหลักฐานและอุปกรณ์ดังต่อไปนี้' </msg>
+<msg timestamp="20230324 15:41:15.970" level="INFO">xpath criteria: (//android.widget.FrameLayout[@resource-id="com.tisconet.ftc.sit:id/content"]//android.widget.TextView)[1]</msg>
+<msg timestamp="20230324 15:41:15.970" level="INFO">${ActualValue} = กรุณาเตรียมหลักฐานและอุปกรณ์ดังต่อไปนี้</msg>
+<status status="PASS" starttime="20230324 15:41:15.938" endtime="20230324 15:41:15.970"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${ActualValue}</arg>
+<arg>${ExpectValue}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20230324 15:41:15.970" endtime="20230324 15:41:15.970"/>
+</kw>
+<status status="PASS" starttime="20230324 15:41:15.938" endtime="20230324 15:41:15.970"/>
+</kw>
+<kw name="Text Shoud Be Equal" library="Top_New_Feed_Mobile_Keywords">
+<arg>${locatDetailVDOCALL1}</arg>
+<arg>${Detail1}</arg>
+<kw name="Get Text" library="AppiumLibrary">
+<var>${ActualValue}</var>
+<arg>${Locator}</arg>
+<doc>Get element text (for hybrid and mobile browser use `xpath` locator, others might cause problem)</doc>
+<msg timestamp="20230324 15:41:16.000" level="INFO">Element 'xpath= (//android.widget.FrameLayout[@resource-id="com.tisconet.ftc.sit:id/cardView"]/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.TextView)[1]' text is 'บัตรประชาชนตัวจริงที่ยังไม่หมดอายุ' </msg>
+<msg timestamp="20230324 15:41:16.000" level="INFO">xpath criteria: (//android.widget.FrameLayout[@resource-id="com.tisconet.ftc.sit:id/cardView"]/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.TextView)[1]</msg>
+<msg timestamp="20230324 15:41:16.000" level="INFO">${ActualValue} = บัตรประชาชนตัวจริงที่ยังไม่หมดอายุ</msg>
+<status status="PASS" starttime="20230324 15:41:15.971" endtime="20230324 15:41:16.000"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${ActualValue}</arg>
+<arg>${ExpectValue}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20230324 15:41:16.000" endtime="20230324 15:41:16.001"/>
+</kw>
+<status status="PASS" starttime="20230324 15:41:15.970" endtime="20230324 15:41:16.001"/>
+</kw>
+<kw name="Text Shoud Be Equal" library="Top_New_Feed_Mobile_Keywords">
+<arg>${locatDetailVDOCALL2}</arg>
+<arg>${Detail2}</arg>
+<kw name="Get Text" library="AppiumLibrary">
+<var>${ActualValue}</var>
+<arg>${Locator}</arg>
+<doc>Get element text (for hybrid and mobile browser use `xpath` locator, others might cause problem)</doc>
+<msg timestamp="20230324 15:41:16.035" level="INFO">Element 'xpath= (//android.widget.FrameLayout[@resource-id="com.tisconet.ftc.sit:id/cardView"]/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.TextView)[2]' text is 'โทรศัพท์มือถือ / แท็บเล็ตที่มีกล้องหน้าพร้อมสัญญาณอินเตอร์เน็ตพร้อมใช้งาน' </msg>
+<msg timestamp="20230324 15:41:16.035" level="INFO">xpath criteria: (//android.widget.FrameLayout[@resource-id="com.tisconet.ftc.sit:id/cardView"]/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.TextView)[2]</msg>
+<msg timestamp="20230324 15:41:16.035" level="INFO">${ActualValue} = โทรศัพท์มือถือ / แท็บเล็ตที่มีกล้องหน้าพร้อมสัญญาณอินเตอร์เน็ตพร้อมใช้งาน</msg>
+<status status="PASS" starttime="20230324 15:41:16.001" endtime="20230324 15:41:16.036"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${ActualValue}</arg>
+<arg>${ExpectValue}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20230324 15:41:16.036" endtime="20230324 15:41:16.036"/>
+</kw>
+<status status="PASS" starttime="20230324 15:41:16.001" endtime="20230324 15:41:16.036"/>
+</kw>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<arg>VerifyContactUsVDOCALL.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20230324 15:41:16.445" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="VerifyContactUsVDOCALL.png"&gt;&lt;img src="VerifyContactUsVDOCALL.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230324 15:41:16.036" endtime="20230324 15:41:16.445"/>
+</kw>
+<status status="PASS" starttime="20230324 15:41:09.697" endtime="20230324 15:41:16.445"/>
+</kw>
+<kw name="Verify Button Start VDO CALL" library="Top_New_Feed_Mobile_Keywords">
 <kw name="Wait Until Page Contains Element" library="AppiumLibrary">
-<arg>//android.widget.LinearLayout[@resource-id="com.tisconet.ftc.sit:id/btnOrderStatus"]//android.widget.ImageView</arg>
-<arg>timeout=10s</arg>
+<arg>${locatButtonStartVDOCALL}</arg>
 <doc>Waits until element specified with `locator` appears on current page.</doc>
-<msg timestamp="20230324 13:56:04.493" level="INFO">xpath criteria: //android.widget.LinearLayout[@resource-id="com.tisconet.ftc.sit:id/btnOrderStatus"]//android.widget.ImageView</msg>
-<status status="PASS" starttime="20230324 13:56:04.467" endtime="20230324 13:56:04.493"/>
+<msg timestamp="20230324 15:41:16.478" level="INFO">xpath criteria: //android.widget.Button[contains(@text,"เริ่ม VDO CALL")]</msg>
+<status status="PASS" starttime="20230324 15:41:16.446" endtime="20230324 15:41:16.478"/>
 </kw>
-<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
-<arg>//android.widget.RadioButton[@resource-id="com.tisconet.ftc.sit:id/rdBuy"][@checked="${Buy}"]</arg>
-<arg>timeout=10s</arg>
-<doc>Waits until element specified with `locator` appears on current page.</doc>
-<msg timestamp="20230324 13:56:04.520" level="INFO">xpath criteria: //android.widget.RadioButton[@resource-id="com.tisconet.ftc.sit:id/rdBuy"][@checked="true"]</msg>
-<status status="PASS" starttime="20230324 13:56:04.494" endtime="20230324 13:56:04.520"/>
+<kw name="Element Should Be Enabled" library="AppiumLibrary">
+<arg>${locatButtonStartVDOCALL}</arg>
+<doc>Verifies that element identified with locator is enabled.</doc>
+<msg timestamp="20230324 15:41:16.505" level="INFO">Element '//android.widget.Button[contains(@text,"เริ่ม VDO CALL")]' is enabled .</msg>
+<msg timestamp="20230324 15:41:16.505" level="INFO">xpath criteria: //android.widget.Button[contains(@text,"เริ่ม VDO CALL")]</msg>
+<status status="PASS" starttime="20230324 15:41:16.478" endtime="20230324 15:41:16.505"/>
 </kw>
-<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
-<arg>//android.widget.RadioButton[@resource-id="com.tisconet.ftc.sit:id/rdSell"][@checked="${Sell}"]</arg>
-<arg>timeout=10s</arg>
-<doc>Waits until element specified with `locator` appears on current page.</doc>
-<msg timestamp="20230324 13:56:04.546" level="INFO">xpath criteria: //android.widget.RadioButton[@resource-id="com.tisconet.ftc.sit:id/rdSell"][@checked="false"]</msg>
-<status status="PASS" starttime="20230324 13:56:04.520" endtime="20230324 13:56:04.546"/>
-</kw>
-<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
-<arg>//android.widget.RadioButton[@resource-id="com.tisconet.ftc.sit:id/rdTrade"][@checked="${Trade}"]</arg>
-<arg>timeout=10s</arg>
-<doc>Waits until element specified with `locator` appears on current page.</doc>
-<msg timestamp="20230324 13:56:04.571" level="INFO">xpath criteria: //android.widget.RadioButton[@resource-id="com.tisconet.ftc.sit:id/rdTrade"][@checked="false"]</msg>
-<status status="PASS" starttime="20230324 13:56:04.546" endtime="20230324 13:56:04.571"/>
-</kw>
-<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
-<arg>//android.widget.EditText[@resource-id="com.tisconet.ftc.sit:id/edtSearch"][contains(@text,"${SearchDefault}")]</arg>
-<arg>timeout=10s</arg>
-<doc>Waits until element specified with `locator` appears on current page.</doc>
-<msg timestamp="20230324 13:56:04.597" level="INFO">xpath criteria: //android.widget.EditText[@resource-id="com.tisconet.ftc.sit:id/edtSearch"][contains(@text,"TINC-A")]</msg>
-<status status="PASS" starttime="20230324 13:56:04.572" endtime="20230324 13:56:04.597"/>
-</kw>
-<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
-<arg>//android.widget.TextView[@resource-id="com.tisconet.ftc.sit:id/tvFundName"][contains(@text,"${FundListSearch}")]</arg>
-<arg>timeout=10s</arg>
-<doc>Waits until element specified with `locator` appears on current page.</doc>
-<msg timestamp="20230324 13:56:04.624" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="com.tisconet.ftc.sit:id/tvFundName"][contains(@text,"TINC-A")]</msg>
-<status status="PASS" starttime="20230324 13:56:04.597" endtime="20230324 13:56:04.624"/>
-</kw>
-<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
-<arg>//android.widget.TextView[@resource-id="com.tisconet.ftc.sit:id/tvFundNameTH"][contains(@text,"${FundName}")]</arg>
-<arg>timeout=10s</arg>
-<doc>Waits until element specified with `locator` appears on current page.</doc>
-<msg timestamp="20230324 13:56:04.681" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="com.tisconet.ftc.sit:id/tvFundNameTH"][contains(@text,"กองทุนเปิด ทิสโก้ อินคัม พลัส ชนิดหน่วยลงทุน A")]</msg>
-<status status="PASS" starttime="20230324 13:56:04.624" endtime="20230324 13:56:04.681"/>
-</kw>
-<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
-<arg>//android.widget.TextView[@resource-id="com.tisconet.ftc.sit:id/tvFundPrice"]</arg>
-<arg>timeout=10s</arg>
-<doc>Waits until element specified with `locator` appears on current page.</doc>
-<msg timestamp="20230324 13:56:05.287" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="com.tisconet.ftc.sit:id/tvFundPrice"]</msg>
-<status status="PASS" starttime="20230324 13:56:04.681" endtime="20230324 13:56:05.287"/>
-</kw>
-<status status="PASS" starttime="20230324 13:55:55.156" endtime="20230324 13:56:05.287"/>
+<status status="PASS" starttime="20230324 15:41:16.445" endtime="20230324 15:41:16.505"/>
 </kw>
 <tag>Contact_us</tag>
 <tag>Multiple</tag>
-<status status="PASS" starttime="20230324 13:54:54.407" endtime="20230324 13:56:05.288"/>
+<status status="PASS" starttime="20230324 15:40:08.072" endtime="20230324 15:41:16.505"/>
 </test>
-<status status="PASS" starttime="20230324 13:54:54.233" endtime="20230324 13:56:05.289"/>
+<status status="PASS" starttime="20230324 15:40:07.888" endtime="20230324 15:41:16.506"/>
 </suite>
 <statistics>
 <total>
