@@ -116,7 +116,7 @@ ${varTimeCase8}  15:30
 ${varTimeCase10}  15:40
 ${varTimeCase18}  17:00
 ${varTimeCase16}  17:00
-${varTimeCase14}  14:07
+${varTimeCase14}  17:00
 
 #C:/Users/เบส/Desktop/TISCO/Mobile App/BestTest/nodeconfig/nodeconfig-android-v11.json
 #C:/Users/เบส/Desktop/TISCO/Mobile App/BestTest/nodeconfig/nodeconfig-android-v12.json
