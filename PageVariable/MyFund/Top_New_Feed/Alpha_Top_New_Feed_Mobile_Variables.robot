@@ -41,6 +41,24 @@ ${varDetailCase9}  Dear value customer\nFund TEGRMF-A will be  terminate soon.\n
 ${varTopicCase10}   Automate notification action switch send by schedule
 ${varDetailCase10}   Dear value customer\nFund TEGRMF-A will be  terminate soon.\nHighly recommend to switch out.
 
+${VarMessageMultipleCase15#1}  Automate mutiple notification Buy#1
+${VarMessageDetailMultipleCase15}  Dear value customer,\nFund TINC-A meet target top earning 10% in 3 month.\nIf you want to invest on this fund please buy.
+
+${VarMessageMultipleCase15#2}  Automate mutiple notification Buy#2
+${VarMessageDetailMultipleCase15#2}  Dear value customer,\nFund TINC-A win fund award from SET.\nIf you want to invest on this fund please buy.
+
+${VarMessageMultipleCase16#1}   Automate schedule mutiple notification Buy#1
+${VarMessageDetailMultipleCase16}   Dear value customer,\nFund TINC-A meet target top earning 10% in 3 month.\nIf you want to invest on this fund please buy.
+
+${VarMessageMultipleCase16#2}  Automate schedule mutiple notification Buy#2
+${VarMessageDetailMultipleCase16#2}  Dear value customer,\nFund TINC-A win fund award from SET.\nIf you want to invest on this fund please buy.
+
+${VarMessageMultipleCase17#1}   Automate mutiple notification switch#1
+${VarMessageDetailMultipleCase17}   Dear value customer,\nFund TEGRMF-A will be ${SPACE}terminate soon.\nHighly recommend to switch out.
+
+${VarMessageMultipleCase17#2}  Automate mutiple notification switch#2
+${VarMessageDetailMultipleCase17#2}  Dear value customer,\nFund rate report for TEGRMF-A was poor performance.\nHighly recommend to switch out.
+
 ${VarMessageMultipleCase18#1}   Automate schedule mutiple notification switch#1
 ${VarMessageDetailMultipleCase18}   Dear value customer\nFund TEGRMF-A will be ${SPACE}terminate soon.\nHighly recommend to switch out.
 
@@ -80,7 +98,8 @@ ${varTimeCase4}  17:00
 ${varTimeCase6}  17:00
 ${varTimeCase8}  15:30
 ${varTimeCase10}  15:40
-${varTimeCase18}  13:53
+${varTimeCase18}  8:40
+${varTimeCase16}  10:45
 
 #C:/Users/เบส/Desktop/TISCO/Mobile App/BestTest/nodeconfig/nodeconfig-android-v11.json
 #C:/Users/เบส/Desktop/TISCO/Mobile App/BestTest/nodeconfig/nodeconfig-android-v12.json

@@ -322,8 +322,97 @@ TESTCASE011_Multiple Feed Specific target
     Verify Message Detail In Inbox  ${varTopicCase11_2}  ${varDetailCase11_2}
     Verify Button Back
 
-TESTCASE018_multiple feed switch as schedule
-    [Tags]  Switch
+TESTCASE015_Multiple Feed Buy
+    [Tags]  Buy  Multiple
+    Open Application  
+    ...    ${URL}  
+    ...    udid=${DEVICE_UDIDLOGIN}  
+    ...    platformName=${PLATFORM}  
+    ...    platformVersion=${DEVICE_TARGET}  
+    ...    deviceName=${DEVICE_NAME}  
+    ...    app=${APP_LOCATION}  
+    ...    automationName=appium  
+    ...    noReset=true
+    Verify Progress Bra
+    Press Button Accept Cookie
+    Press Icon Notification
+    Verify Message Inbox  ${VarMessageMultipleCase15#1}  ${VarMessageDetailMultipleCase15}
+    Select Topic  ${VarMessageMultipleCase15#1}
+    Verify Message Detail In Inbox  ${VarMessageMultipleCase15#1}  ${VarMessageDetailMultipleCase15}
+    Verify Button Interested in Invest
+    Press Button Back
+    Verify Message Inbox  ${VarMessageMultipleCase15#2}  ${VarMessageDetailMultipleCase15#2}
+    Select Topic  ${VarMessageMultipleCase15#2}
+    Verify Message Detail In Inbox  ${VarMessageMultipleCase15#2}  ${VarMessageDetailMultipleCase15#2}
+    Verify Button Interested in Invest
+    Click Button Interested in Invest
+    Click Pin   1  1  2  2  3  3
+    Verify Mobile Loading Is Done
+    Verify Default Transaction Screen  ${varActive}  ${varNotActive}  ${varNotActive}  ${varFundCodeTINC-A}  ${varFundCodeTINC-A}  ${varFundNameTINC-A} 
+
+TESTCASE016_Multiple Feed Buy As Schedule
+    [Tags]  Buy  Multiple
+    Open Application  
+    ...    ${URL}  
+    ...    udid=${DEVICE_UDIDLOGIN}  
+    ...    platformName=${PLATFORM}  
+    ...    platformVersion=${DEVICE_TARGET}  
+    ...    deviceName=${DEVICE_NAME}  
+    ...    app=${APP_LOCATION}  
+    ...    automationName=appium  
+    ...    noReset=true
+    Verify Progress Bra
+    Press Button Accept Cookie
+    Press Icon Notification
+    Verify Message Inbox  ${VarMessageMultipleCase16#1}  ${VarMessageDetailMultipleCase16}
+    Verify Time on Inbox  ${varTimeCase16}
+    Select Topic  ${VarMessageMultipleCase16#1}
+    Verify Message Detail In Inbox  ${VarMessageMultipleCase16#1}  ${VarMessageDetailMultipleCase16}
+    Verify Date Time In Message as Schedule  ${varTimeCase16}
+    Verify Button Interested in Invest
+    Press Button Back
+    Verify Message Inbox  ${VarMessageMultipleCase16#2}  ${VarMessageDetailMultipleCase16#2}
+    Verify Time on Inbox  ${varTimeCase16}
+    Select Topic  ${VarMessageMultipleCase16#2}
+    Verify Message Detail In Inbox  ${VarMessageMultipleCase16#2}  ${VarMessageDetailMultipleCase16#2}
+    Verify Button Interested in Invest
+    Click Button Interested in Invest
+    Click Pin   1  1  2  2  3  3
+    Verify Mobile Loading Is Done
+    Verify Default Transaction Screen  ${varActive}  ${varNotActive}  ${varNotActive}  ${varFundCodeTINC-A}  ${varFundCodeTINC-A}  ${varFundNameTINC-A} 
+
+
+TESTCASE017_Mutiple Feed Switch
+    [Tags]  Switch  Multiple
+    Open Application  
+    ...    ${URL}  
+    ...    udid=${DEVICE_UDIDLOGIN}  
+    ...    platformName=${PLATFORM}  
+    ...    platformVersion=${DEVICE_TARGET}  
+    ...    deviceName=${DEVICE_NAME}  
+    ...    app=${APP_LOCATION}  
+    ...    automationName=appium  
+    ...    noReset=true
+    Verify Progress Bra
+    Press Button Accept Cookie
+    Press Icon Notification
+    Verify Message Inbox  ${VarMessageMultipleCase17#1}  ${VarMessageDetailMultipleCase17}
+    Select Topic  ${VarMessageMultipleCase17#1}
+    Verify Message Detail In Inbox  ${VarMessageMultipleCase17#1}  ${VarMessageDetailMultipleCase17}
+    Verify Button Interested in Invest
+    Press Button Back
+    Verify Message Inbox  ${VarMessageMultipleCase17#2}  ${VarMessageDetailMultipleCase17#2}
+    Select Topic  ${VarMessageMultipleCase17#2}
+    Verify Message Detail In Inbox  ${VarMessageMultipleCase17#2}  ${VarMessageDetailMultipleCase17#2}
+    Verify Button Interested in Invest
+    Click Button Interested in Invest
+    Click Pin   1  1  2  2  3  3
+    Verify Mobile Loading Is Done
+    Verify Default Transaction Screen  ${varNotActive}  ${varNotActive}  ${varActive}  ${varFundCodeTEGRMF-A}  ${varFundCodeTEGRMF-A}  ${varFundNameTEGRMF-A}  
+
+
+TESTCASE018_Multiple Feed Switch As Schedule
+    [Tags]  Switch  Multiple
     Open Application  
     ...    ${URL}  
     ...    udid=${DEVICE_UDIDLOGIN}  
