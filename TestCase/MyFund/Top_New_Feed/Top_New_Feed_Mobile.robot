@@ -337,7 +337,7 @@ TESTCASE013_Multiple Feed Contact us
     Press Button Accept Cookie
     Press Icon Notification
     Verify Message Inbox  ${VarMessageMultipleCase13#1}  ${VarMessageDetailMultipleCase13}
-    Select Topic  ${VarMessageMultipleCase14#1}
+    Select Topic  ${VarMessageMultipleCase13#1}
     Verify Message Detail In Inbox  ${VarMessageMultipleCase13#1}  ${VarMessageDetailMultipleCase13}
     Verify Button Contact Us
     Press Button Back
