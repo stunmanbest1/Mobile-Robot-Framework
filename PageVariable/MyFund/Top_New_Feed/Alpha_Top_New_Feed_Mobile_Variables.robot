@@ -41,6 +41,18 @@ ${varDetailCase9}  Dear value customer\nFund TEGRMF-A will be  terminate soon.\n
 ${varTopicCase10}   Automate notification action switch send by schedule
 ${varDetailCase10}   Dear value customer\nFund TEGRMF-A will be  terminate soon.\nHighly recommend to switch out.
 
+${varTopicCase11_1}  Automate mutiple notification#1
+${varDetailCase11_1}  Simple Detail for notification topic 1
+
+${varTopicCase11_2}  Automate mutiple notification#2
+${varDetailCase11_2}  Simple Detail for notification topic 2
+
+${varTopicCase12_1}  Automate schedule mutiple notification#1
+${varDetailCase12_1}  Sample Detail for schedule notification topic 1
+
+${varTopicCase12_2}  Automate schedule mutiple notification#2
+${varDetailCase12_2}  Sample Detail for schedule notification topic 2
+
 ${VarMessageMultipleCase13#1}  Automate contact us mutiple notification #1
 ${VarMessageDetailMultipleCase13}  Sample Detail for contact us notification topic 1
 
@@ -80,11 +92,7 @@ ${VarMessageDetailMultipleCase18}   Dear value customer\nFund TEGRMF-A will be $
 
 ${VarMessageMultipleCase18#2}   Automate schedule mutiple notification switch#2
 ${VarMessageDetailMultipleCase18#2}  Dear value customer\nFund rate report for TEGRMF-A was poor performance.\nHighly recommend to switch out.
-${varTopicCase11_1}  Automate mutiple notification#1
-${varTopicCase11_2}  Automate mutiple notification#2
 
-${varDetailCase11_1}  Simple Detail for notification topic 1
-${varDetailCase11_2}  Simple Detail for notification topic 2
 
 
 
@@ -112,8 +120,9 @@ ${varFundNameTEGRMF-A}  กองทุนเปิด ทิสโก้หุ�
 ${varTimeCase2}  17:00
 ${varTimeCase4}  17:00
 ${varTimeCase6}  17:00
-${varTimeCase8}  15:30
-${varTimeCase10}  15:40
+${varTimeCase8}  17:00
+${varTimeCase10}  17:00
+${varTimeCase12}  10:00
 ${varTimeCase18}  17:00
 ${varTimeCase16}  17:00
 ${varTimeCase14}  17:00

@@ -322,6 +322,35 @@ TESTCASE011_Multiple Feed Specific target
     Verify Message Detail In Inbox  ${varTopicCase11_2}  ${varDetailCase11_2}
     Verify Button Back
 
+TESTCASE012_Multiple Feed Specific Target By Schedule
+    [Tags]  Target   Multiple
+    Open Application  
+    ...    ${URL}  
+    ...    udid=${DEVICE_UDIDLOGIN}  
+    ...    platformName=${PLATFORM}  
+    ...    platformVersion=${DEVICE_TARGET}  
+    ...    deviceName=${DEVICE_NAME}  
+    ...    app=${APP_LOCATION}  
+    ...    automationName=appium  
+    ...    noReset=true
+    Verify Progress Bra
+    Press Button Accept Cookie
+    Press Icon Notification
+    Verify Message Inbox  ${varTopicCase12_1}  ${varDetailCase12_1}
+    Verify Message Inbox  ${varTopicCase12_2}  ${varDetailCase12_2}
+    Verify Time on Inbox  ${varTimeCase12}
+    Select Topic  ${varTopicCase12_1}
+    Verify Message Detail In Inbox  ${varTopicCase12_1}  ${varDetailCase12_1}
+    Verify Button Back
+    Press Button Back
+    Verify Message Inbox  ${varTopicCase12_2}  ${varDetailCase12_2}
+    Verify Time on Inbox  ${varTimeCase12}
+    Select Topic  ${varTopicCase12_2}
+    Sleep  5s
+    Verify Message Detail In Inbox  ${varTopicCase12_2}  ${varDetailCase12_2}
+    Verify Button Back
+
+
 TESTCASE013_Multiple Feed Contact us
     [Tags]  Contact_us  Multiple
     Open Application  

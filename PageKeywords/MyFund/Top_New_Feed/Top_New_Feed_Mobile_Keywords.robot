@@ -36,7 +36,7 @@ Verify Message Inbox
 Verify Message Detail In Inbox
     [Arguments]  ${TopicValue}  ${DetailValue}
     AppiumLibrary.Wait Until Page Contains Element   ${locatAndroidMessageTopicInboxIn}  timeout=10s
-    Sleep  4s
+    Sleep  6s
     AppiumLibrary.Wait Until Page Contains Element   //android.widget.LinearLayout/android.widget.TextView[1][contains(@text,"${TopicValue}")]  timeout=10s
     # Text Shoud Be Equal  ${locatAndroidMessageTopicInboxIn}  ${TopicValue}  #ถ้าใช้อันนี้ พอกด back กลับมาเป็นอีกค่า
     Text Shoud Be Equal  ${locatAndroidMessageDetailInboxIn}  ${DetailValue}
