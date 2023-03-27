@@ -189,8 +189,6 @@ TESTCASE007_Single Feed Specific Action buy
     Verify Message Detail In Inbox  ${varTopicCase7}  ${varDetailCase7}
     Verify Button Back
     Verify Button Interested in Invest
-    #ขาด Date
-    # Verify Date In Message
     Click Button Interested in Invest
     Verify Label Header PIN
     Verify Button Back
@@ -253,8 +251,6 @@ TESTCASE009_Single Feed Specific Action switch
     Verify Message Detail In Inbox  ${varTopicCase9}  ${varDetailCase9}
     Verify Button Back
     Verify Button Interested in Invest
-    #ขาด Date
-    # Verify Date In Message
     Click Button Interested in Invest
     Verify Label Header PIN
     Verify Button Back
