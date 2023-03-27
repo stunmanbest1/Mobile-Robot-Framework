@@ -104,7 +104,7 @@ TESTCASE004_Single Feed Specific Target By Schedule
     Verify Button Back
 
 
-TESTCASE005_Single Feed Specific Contact Us by now
+TESTCASE005_Single Feed Specific Contact Us By Now
     [Tags]  Contact_us
     Open Application  
     ...    ${URL}  
@@ -138,7 +138,7 @@ TESTCASE005_Single Feed Specific Contact Us by now
     Verify Contact Us VDO CALL  ${varHeaderVDOCALL}  ${varAnnounceVDOCALL}  ${varVDOCALLDetail1}  ${varVDOCALLDetail2}
     Verify Button Start VDO CALL
 
-TESTCASE006_Single Feed Specific Contact Us by schedule
+TESTCASE006_Single Feed Specific Contact Us By Schedule
     [Tags]  Contact_us
     Open Application  
     ...    ${URL}  
@@ -170,7 +170,7 @@ TESTCASE006_Single Feed Specific Contact Us by schedule
     Verify Contact Us VDO CALL  ${varHeaderVDOCALL}  ${varAnnounceVDOCALL}  ${varVDOCALLDetail1}  ${varVDOCALLDetail2}
     Verify Button Start VDO CALL
     
-TESTCASE007_Single Feed Specific Action buy
+TESTCASE007_Single Feed Specific Action Buy
     [Tags]  Buy
     Open Application  
     ...    ${URL}  
@@ -199,7 +199,7 @@ TESTCASE007_Single Feed Specific Action buy
     Verify Mobile Loading Is Done
     Verify Default Transaction Screen  ${varActive}  ${varNotActive}  ${varNotActive}  ${varFundCodeTINC-A}  ${varFundCodeTINC-A}  ${varFundNameTINC-A}
 
-TESTCASE008_Single Feed Specific Action buy as schedule
+TESTCASE008_Single Feed Specific Action Buy As Schedule
     [Tags]  Buy
     Open Application  
     ...    ${URL}  
@@ -232,7 +232,7 @@ TESTCASE008_Single Feed Specific Action buy as schedule
     Verify Default Transaction Screen  ${varActive}  ${varNotActive}  ${varNotActive}  ${varFundCodeTINC-A}  ${varFundCodeTINC-A}  ${varFundNameTINC-A}
 
 
-TESTCASE009_Single Feed Specific Action switch
+TESTCASE009_Single Feed Specific Action Switch
     [Tags]  Switch
     Open Application  
     ...    ${URL}  
@@ -262,7 +262,7 @@ TESTCASE009_Single Feed Specific Action switch
     Verify Mobile Loading Is Done
     Verify Default Transaction Screen  ${varNotActive}  ${varNotActive}  ${varActive}  ${varFundCodeTEGRMF-A}  ${varFundCodeTEGRMF-A}  ${varFundNameTEGRMF-A}
 
-TESTCASE010_Single Feed Specific Action switch as schedule
+TESTCASE010_Single Feed Specific Action switch As Schedule
     [Tags]  Switch
     Open Application  
     ...    ${URL}  
@@ -294,7 +294,7 @@ TESTCASE010_Single Feed Specific Action switch as schedule
     Verify Mobile Loading Is Done
     Verify Default Transaction Screen  ${varNotActive}  ${varNotActive}  ${varActive}  ${varFundCodeTEGRMF-A}  ${varFundCodeTEGRMF-A}  ${varFundNameTEGRMF-A}
 
-TESTCASE011_Multiple Feed Specific target
+TESTCASE011_Multiple Feed Specific Target
     [Tags]  Target   Multiple
     Open Application  
     ...    ${URL}  
