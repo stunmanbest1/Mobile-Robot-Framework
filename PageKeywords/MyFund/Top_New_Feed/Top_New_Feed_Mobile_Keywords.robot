@@ -28,6 +28,8 @@ Verify Message Inbox
     [Arguments]  ${TopicValue}  ${DetailValue}
     AppiumLibrary.Wait Until Page Contains Element   ${locatAndroidMessageTopicInbox}  timeout=10s
     Sleep  4s
+    Swipe up until found expected location   ${TopicValue}
+    Sleep  4s
     Wait Until Page Contains Element  //android.widget.LinearLayout/android.widget.LinearLayout/android.widget.TextView[contains(@text,"${TopicValue}")] 
     Wait Until Page Contains Element  //android.widget.LinearLayout/android.widget.LinearLayout/android.widget.TextView[1][contains(@text,"${DetailValue}")] 
 
@@ -251,3 +253,54 @@ Verify Default Transaction Screen
     #Fund Name
     Wait Until Page Contains Element  //android.widget.TextView[@resource-id="com.tisconet.ftc.sit:id/tvFundNameTH"][contains(@text,"${FundName}")]  timeout=10s
     Wait Until Page Contains Element  //android.widget.TextView[@resource-id="com.tisconet.ftc.sit:id/tvFundPrice"]  timeout=10s
+
+
+Swipe Down
+    [Arguments]       ${fragement}
+    ${element_size}=    Get Element Size    ${fragement}
+    ${element_location}=    Get Element Location    ${fragement}
+    ${start_x}=         Evaluate      ${element_location['x']} + (${element_size['width']} * 0.5)
+    ${start_y}=         Evaluate      ${element_location['y']} + (${element_size['height']} * 0.3)
+    ${end_x}=           Evaluate      ${element_location['x']} + (${element_size['width']} * 0.5)
+    ${end_y}=           Evaluate      ${element_location['y']} + (${element_size['height']} * 0.7)
+    Swipe               ${start_x}    ${start_y}  ${end_x}  ${end_y}  500
+    Sleep  1
+
+Swipe Up
+    [Arguments]       ${fragement}       
+    ${element_size}=    Get Element Size     ${fragement}
+    ${element_location}=    Get Element Location    ${fragement}
+    ${start_x}=         Evaluate      ${element_location['x']} + (${element_size['width']} * 0.5)
+    ${start_y}=         Evaluate      ${element_location['y']} + (${element_size['height']} * 0.9)
+    ${end_x}=           Evaluate      ${element_location['x']} + (${element_size['width']} * 0.5)
+    ${end_y}=           Evaluate      ${element_location['y']} + (${element_size['height']} * 0.1)
+    Swipe               ${start_x}    ${start_y}  ${end_x}  ${end_y}  25
+
+Swipe up until found expected location
+    [Arguments]     ${expected_location}
+    FOR  ${index}  IN RANGE  1  20
+        FOR  ${index}  IN RANGE  1  6
+            ${current_location}    Get Text      xpath=(//android.widget.TextView[@resource-id="com.tisconet.ftc.sit:id/tvHeader"])[${index}]
+            IF    '${current_location}' != '${expected_location}'  
+                Log to Console  ${current_location}
+            END
+            Exit For Loop If  "${current_location}" == "${expected_location}"  
+        END
+        Log to Console  FINISH------------ROUND
+        Swipe Up   xpath=(//android.widget.TextView[@resource-id="com.tisconet.ftc.sit:id/tvHeader"])[8]
+        Exit For Loop If  "${current_location}" == "${expected_location}" 
+        Sleep  4s
+    END
+
+
+# Swipe up until found expected location
+#     [Arguments]     ${expected_location}
+#     Swipe Up    xpath=(//android.widget.TextView[@resource-id="com.tisconet.ftc.sit:id/tvHeader"])
+#     ${current_location}    Get Text      xpath=(//android.widget.TextView[@resource-id="com.tisconet.ftc.sit:id/tvHeader"])
+#     IF    '${current_location}' != '${expected_location}'  
+#         Log to Console  ${current_location}
+#         Swipe up until found expected location    ${expected_location}
+#     END
+
+
+
